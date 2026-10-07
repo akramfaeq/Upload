@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-10-07T22:32:18.022087+00:00",
+  "updated_at": "2026-10-07T22:33:40.547092+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 116,
+      "ping": 92,
       "quality": "Good",
       "link": "vless://cd55b3ae-6833-4eff-be18-55bd92164071@189.24.108.152:59719?&security=reality&flow=xtls-rprx-vision&pbk=cWI4RpOZJqkX1HE9pQIZQ8eNeLWGX8UEzECyRehQnlQ&sid=6e6f9fa5decc02&fp=chrome&sni=www.sony.lu&type=tcp&headerType=none&host=www.sony.lu&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU"
     },
@@ -17,7 +17,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 129,
+      "ping": 96,
       "quality": "Good",
       "link": "vless://953358cb-82ba-4296-960d-6d2ec3468f4c@193.148.57.60:24444?&security=reality&flow=xtls-rprx-vision&pbk=l84FK9JIi4Bx-mhBZIm4K4Td5V_ekOobJmkvNAvklSM&sid=107acb307423c5aa&fp=firefox&sni=yandex.ru&type=tcp&headerType=none&host=yandex.ru&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU"
     },
@@ -26,205 +26,196 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 298,
+      "ping": 291,
       "quality": "Fair",
       "link": "vless://8df2e661-6f46-471b-9133-7fc13a0daa35@65.108.3.59:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no&security=reality&sid=90ec9bba2019&sni=web.eitaa.com&type=tcp#%F0%9F%AA%9942@oneclickvpnkeys"
-    },
-    {
-      "name": "LU卢森堡1",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 10,
-      "quality": "Excellent",
-      "link": "vless://f775978b-6e22-41a8-ae5e-5f9779e6745f@188.42.145.90:8443?encryption=none&security=tls&sni=juzibaipiao.5112233.xyz&type=ws&host=juzibaipiao.5112233.xyz&path=%2f%3fed%3d2048#%f0%9f%87%b1%f0%9f%87%ba+LU+%e5%8d%a2%e6%a3%ae%e5%a0%a1+1"
-    },
-    {
-      "name": "RELAY-188.42.145.180-0587",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "trojan",
-      "ping": 15,
-      "quality": "Excellent",
-      "link": "trojan://humanity@188.42.145.180:443?security=tls&sni=www.volumeroot.com&type=ws&path=/assignment&Host=www.volumeroot.com#%F0%9F%8F%81RELAY-188.42.145.180-0587"
     },
     {
       "name": "AT-212.183.88.136-0551",
       "flag": "🇦🇹",
       "country": "Austria",
       "protocol": "trojan",
-      "ping": 21,
+      "ping": 38,
       "quality": "Excellent",
       "link": "trojan://humanity@212.183.88.136:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#%F0%9F%87%A6%F0%9F%87%B9AT-212.183.88.136-0551"
-    },
-    {
-      "name": "www.v2nodes.com vless-DE-1... 6",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "vless",
-      "ping": 112,
-      "quality": "Good",
-      "link": "vless://39770645-fcd2-4f35-a670-877672fc2ef7@95.85.252.72:443?allowInsecure=1&sni=de1.lostpool.org&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%236"
-    },
-    {
-      "name": "www.v2nodes.com vless-PL-1... 8",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 114,
-      "quality": "Good",
-      "link": "vless://b18d5990-96eb-4587-a386-7f8ef7591e6a@31.77.13.19:2063?sni=rusbid.de&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B5%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-PL-1...%20%238"
-    },
-    {
-      "name": "www.v2nodes.com vless-NL-1... 1",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 118,
-      "quality": "Good",
-      "link": "vless://86037609-3790-4901-bd2f-c698092fb1fc@2.27.211.38:443?sni=po.skfv-mirror.ru&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%B3%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-NL-1...%20%231"
-    },
-    {
-      "name": "www.v2nodes.com vless-NO-1... 1",
-      "flag": "🇳🇴",
-      "country": "Norway",
-      "protocol": "vless",
-      "ping": 124,
-      "quality": "Good",
-      "link": "vless://db320947-adfb-400d-b60b-383b8324bffe@46.29.238.88:40443?sni=deepl.com&fp=chrome&security=tls#%F0%9F%87%B3%F0%9F%87%B4%5Bwww.v2nodes.com%5D%20vless-NO-1...%20%231"
-    },
-    {
-      "name": "NL-45.87.41.18-0543",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "trojan",
-      "ping": 126,
-      "quality": "Good",
-      "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0543"
-    },
-    {
-      "name": "DE-185.220.100.168-0547",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "trojan",
-      "ping": 127,
-      "quality": "Good",
-      "link": "trojan://humanity@185.220.100.168:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.220.100.168-0547"
-    },
-    {
-      "name": "www.v2nodes.com vless-SE-1... 2",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "protocol": "vless",
-      "ping": 127,
-      "quality": "Good",
-      "link": "vless://87fd990d-ca93-440a-bbd4-e8281c4a0910@132.243.231.12:443?sni=d3-se1.cloud-cdn.xyz&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-SE-1...%20%232"
     },
     {
       "name": "RO-77.74.123.106-0295",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 130,
+      "ping": 89,
       "quality": "Good",
       "link": "trojan://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.106:4443?security=tls&sni=grape-test-italy.dynuddns.net#%F0%9F%87%B7%F0%9F%87%B4RO-77.74.123.106-0295"
     },
     {
-      "name": "DE-185.255.179.166-0541",
+      "name": "www.v2nodes.com vless-PL-1... 8",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "protocol": "vless",
+      "ping": 92,
+      "quality": "Good",
+      "link": "vless://b18d5990-96eb-4587-a386-7f8ef7591e6a@31.77.13.19:2063?sni=rusbid.de&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B5%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-PL-1...%20%238"
+    },
+    {
+      "name": "www.v2nodes.com vless-NO-1... 1",
+      "flag": "🇳🇴",
+      "country": "Norway",
+      "protocol": "vless",
+      "ping": 97,
+      "quality": "Good",
+      "link": "vless://db320947-adfb-400d-b60b-383b8324bffe@46.29.238.88:40443?sni=deepl.com&fp=chrome&security=tls#%F0%9F%87%B3%F0%9F%87%B4%5Bwww.v2nodes.com%5D%20vless-NO-1...%20%231"
+    },
+    {
+      "name": "www.v2nodes.com vless-DE",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "protocol": "vless",
+      "ping": 98,
+      "quality": "Good",
+      "link": "vless://aef06aad-8e97-4452-9257-6142b5b1ceb7@179.254.163.11:443?allowInsecure=1&sni=decemberfest.elfhost.ru&flow=xtls-rprx-vision&fp=safari&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE"
+    },
+    {
+      "name": "www.v2nodes.com vless-SE-1... 2",
+      "flag": "🇸🇪",
+      "country": "Sweden",
+      "protocol": "vless",
+      "ping": 104,
+      "quality": "Good",
+      "link": "vless://87fd990d-ca93-440a-bbd4-e8281c4a0910@132.243.231.12:443?sni=d3-se1.cloud-cdn.xyz&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-SE-1...%20%232"
+    },
+    {
+      "name": "www.v2nodes.com vless-DE-1... 6",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "protocol": "vless",
+      "ping": 106,
+      "quality": "Good",
+      "link": "vless://39770645-fcd2-4f35-a670-877672fc2ef7@95.85.252.72:443?allowInsecure=1&sni=de1.lostpool.org&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%236"
+    },
+    {
+      "name": "www.v2nodes.com vless-NL-1... 1",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "protocol": "vless",
+      "ping": 106,
+      "quality": "Good",
+      "link": "vless://86037609-3790-4901-bd2f-c698092fb1fc@2.27.211.38:443?sni=po.skfv-mirror.ru&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%B3%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-NL-1...%20%231"
+    },
+    {
+      "name": "DE-185.220.100.168-0547",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 139,
+      "ping": 109,
       "quality": "Good",
-      "link": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.255.179.166-0541"
+      "link": "trojan://humanity@185.220.100.168:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.220.100.168-0547"
     },
     {
-      "name": "www.v2nodes.com vless-FI-1... 8",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "protocol": "vless",
-      "ping": 140,
-      "quality": "Good",
-      "link": "vless://67eb6b17-7797-4ded-bf52-423c4c5f6cbd@87.239.249.137:443?sni=www.foxsports.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%238"
-    },
-    {
-      "name": "www.v2nodes.com vless- 2",
+      "name": "德国V2CROSS.COM",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 142,
+      "ping": 113,
       "quality": "Good",
-      "link": "vless://f49d04d6-aaa7-4013-b323-bc35b78230db@159.195.5.79:2083?sni=s4ws.ragingbull.de5.net&type=ws&host=s4ws.ragingbull.de5.net&path=/wsrb7k2mfp=chrome&security=tls#%F0%9F%8F%B3%5Bwww.v2nodes.com%5D%20vless-%20%232"
+      "link": "vless://30e52776-55ac-3cb4-8d36-e2910f07e2c3@s249.freessr.bid:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=u695098u47d2e9bes71.gogocs.xyz&fp=firefox&alpn=h2%2Chttp%2F1.1&type=tcp&headerType=none&host=47d2e9bes71.gogocs.xyz#%E5%BE%B7%E5%9B%BD+V2CROSS.COM"
     },
     {
-      "name": "www.v2nodes.com vless-FI-1... 5",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "protocol": "vless",
-      "ping": 150,
+      "name": "NL-45.87.41.18-0543",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "protocol": "trojan",
+      "ping": 120,
       "quality": "Good",
-      "link": "vless://47f79fc1-0646-40e8-8a58-73e85d183d5a@144.31.27.215:43000?sni=144.31.27.215&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%235"
+      "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0543"
     },
     {
       "name": "www.v2nodes.com vless-FI-1...",
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 152,
+      "ping": 121,
       "quality": "Good",
       "link": "vless://df53b6c2-8005-475c-9eb9-74e1be785dc8@13.143.129.45:443?sni=addons.mozilla.org&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1..."
+    },
+    {
+      "name": "www.v2nodes.com vless-FI-1... 5",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "protocol": "vless",
+      "ping": 133,
+      "quality": "Good",
+      "link": "vless://47f79fc1-0646-40e8-8a58-73e85d183d5a@144.31.27.215:43000?sni=144.31.27.215&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%235"
+    },
+    {
+      "name": "www.v2nodes.com vless-FI-1... 8",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "protocol": "vless",
+      "ping": 133,
+      "quality": "Good",
+      "link": "vless://67eb6b17-7797-4ded-bf52-423c4c5f6cbd@87.239.249.137:443?sni=www.foxsports.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%238"
     },
     {
       "name": "波兰 | POL 1",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 167,
+      "ping": 196,
       "quality": "Good",
       "link": "vless://b18d5990-96eb-4587-a386-7f8ef7591e6a@pl-waw.dontblockmepls.com:2063?sni=rusbid.de&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%B5%F0%9F%87%B1%20%E6%B3%A2%E5%85%B0%20%7C%20POL%20%231"
+    },
+    {
+      "name": "荷兰 | NLD 5",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "protocol": "vless",
+      "ping": 196,
+      "quality": "Good",
+      "link": "vless://3f89518a-e78f-4d31-a1c5-1725b4cfb70d@89.41.181.170:443?sni=3f89518a.ferrin.uk&alpn=h2&fp=safari&security=tls#%F0%9F%87%B3%F0%9F%87%B1%20%E8%8D%B7%E5%85%B0%20%7C%20NLD%20%235"
+    },
+    {
+      "name": "www.v2nodes.com vless-BY-1...",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "protocol": "vless",
+      "ping": 200,
+      "quality": "Fair",
+      "link": "vless://6c713691-3ca2-0008-ad25-113d1bed6b03@89.125.96.75:2053?allowInsecure=0&sni=wss.zazazuza.ru&type=ws&host=wss.zazazuza.ru&path=/vpn-wss/fluxor/59011/fp=chrome&security=tls#%F0%9F%87%A7%F0%9F%87%BE%5Bwww.v2nodes.com%5D%20vless-BY-1..."
     },
     {
       "name": "www.v2nodes.com vless-SE-1...",
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 278,
+      "ping": 223,
       "quality": "Fair",
       "link": "vless://203d434a-2a92-45df-8973-ca80434ecf73@163.245.43.50:443?sni=se-twitch.global-cdn.org&type=grpc&serviceName=content.v1.Feed&fp=firefox&security=tls#%F0%9F%87%B8%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-SE-1..."
-    },
-    {
-      "name": "奥地利 | AUT 1",
-      "flag": "🇦🇹",
-      "country": "Austria",
-      "protocol": "vless",
-      "ping": 280,
-      "quality": "Fair",
-      "link": "vless://4d852af3-a121-41aa-9aed-4ca40a6f7b4d@193.233.232.96:443?sni=addons.mozilla.org&flow=xtls-rprx-vision&fp=randomized&security=tls#%F0%9F%87%A6%F0%9F%87%B9%20%E5%A5%A5%E5%9C%B0%E5%88%A9%20%7C%20AUT%20%231"
-    },
-    {
-      "name": "www.v2nodes.com vless-FI-1... 9",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "protocol": "vless",
-      "ping": 284,
-      "quality": "Fair",
-      "link": "vless://bd99da97-265e-0021-82cc-4ec009fe9ce2@5.61.91.206:443?sni=www.amd.com&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%239"
     },
     {
       "name": "www.v2nodes.com vless-CH-1...",
       "flag": "🇨🇭",
       "country": "Switzerland",
       "protocol": "vless",
-      "ping": 317,
+      "ping": 249,
       "quality": "Fair",
       "link": "vless://c0dd6d59-1573-43af-8b70-1470b2632a6d@208.69.78.217:2053?sni=www.apple.com&fp=chrome&security=tls#%F0%9F%87%A8%F0%9F%87%AD%5Bwww.v2nodes.com%5D%20vless-CH-1..."
+    },
+    {
+      "name": "www.v2nodes.com vless-FI-1... 9",
+      "flag": "🇫🇮",
+      "country": "Finland",
+      "protocol": "vless",
+      "ping": 271,
+      "quality": "Fair",
+      "link": "vless://bd99da97-265e-0021-82cc-4ec009fe9ce2@5.61.91.206:443?sni=www.amd.com&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%239"
     },
     {
       "name": "www.v2nodes.com vless-SE-1... 6",
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 327,
+      "ping": 281,
       "quality": "Fair",
       "link": "vless://fc00adfb-232a-46ce-8b93-0c70e516aa8a@62.60.159.81:2053?sni=www.samsung.com&type=grpc&serviceName=grpce5bb9e71&fp=safari&security=tls#%F0%9F%87%B8%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-SE-1...%20%236"
     },
@@ -233,7 +224,7 @@
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 417,
+      "ping": 383,
       "quality": "Fair",
       "link": "vless://04c808e2-0b59-47b0-a54b-32fc7ef1c902@109.120.134.243:443?sni=free.cndyw.ggff.net&type=ws&host=free.cndyw.ggff.net&path=pyip=bpb.yousef.isegaro.comfp=random&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%2312"
     },
@@ -242,16 +233,25 @@
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 1650,
+      "ping": 1247,
       "quality": "Slow",
       "link": "vless://2412bd96-925b-43f2-81d1-0ed4f0793699@31.207.7.74:443?sni=pkg.go.dev&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-SE-1...%20%235"
+    },
+    {
+      "name": "奥地利 | AUT 1",
+      "flag": "🇦🇹",
+      "country": "Austria",
+      "protocol": "vless",
+      "ping": 2100,
+      "quality": "Slow",
+      "link": "vless://4d852af3-a121-41aa-9aed-4ca40a6f7b4d@193.233.232.96:443?sni=addons.mozilla.org&flow=xtls-rprx-vision&fp=randomized&security=tls#%F0%9F%87%A6%F0%9F%87%B9%20%E5%A5%A5%E5%9C%B0%E5%88%A9%20%7C%20AUT%20%231"
     },
     {
       "name": "www.v2nodes.com vless-SE-1... 3",
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 141,
+      "ping": 102,
       "quality": "Good",
       "link": "vless://87fd990d-ca93-440a-bbd4-e8281c4a0910@132.243.231.4:443?#%F0%9F%87%B8%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-SE-1...%20%233"
     },
@@ -260,70 +260,70 @@
       "flag": "🇨🇭",
       "country": "Switzerland",
       "protocol": "vless",
-      "ping": 155,
+      "ping": 104,
       "quality": "Good",
       "link": "vless://ef8907eb-8bb5-4735-80f2-1d0068500d95@116.204.164.17:7443?sni=ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev&type=ws&host=ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev&path=/@Marisa_kristifp=chromesecurity=tls#%F0%9F%87%AE%F0%9F%87%B9%5Bwww.v2nodes.com%5D%20vless-IT-7...%20%231"
+    },
+    {
+      "name": "93@oneclickvpnkeys",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "protocol": "vless",
+      "ping": 125,
+      "quality": "Good",
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.231:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#%F0%9F%A6%8193@oneclickvpnkeys"
     },
     {
       "name": "美国 | USA",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 82,
+      "ping": 147,
       "quality": "Good",
       "link": "vless://aa705581-4390-42e3-a53a-09d116032454@us.srv.safes-infrastructure.com:8443?&security=reality&flow=xtls-rprx-vision&pbk=yg8AxPPiKD1wQ-AlxB8Iwo0w59A4QTVob_FVAl4iuRw&sid=e7d8f0aa&fp=firefox&type=tcp&headerType=none&host=us.srv.safes-infrastructure.com&path=%2F#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
     },
     {
-      "name": "89@oneclickvpnkeys",
+      "name": "95@oneclickvpnkeys",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 87,
+      "ping": 164,
       "quality": "Good",
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.182:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#%E2%98%BA%EF%B8%8F89@oneclickvpnkeys"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.16:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#%F0%9F%94%A595@oneclickvpnkeys"
     },
     {
-      "name": "𝗝𝗼𝗶𝗻  @vpnplusee_free |",
+      "name": "Server 3",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 101,
+      "ping": 171,
       "quality": "Good",
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.212:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&security=reality&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.184:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#Server%203"
     },
     {
       "name": "@ConfigYab_AUTO",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 138,
+      "ping": 198,
       "quality": "Good",
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.133:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=yahoo.com&fp=ios&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a&packetEncoding=xudp#@ConfigYab_AUTO"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.95:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=yahoo.com&fp=ios&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a&packetEncoding=xudp#@ConfigYab_AUTO"
     },
     {
-      "name": "𝗝𝗼𝗶𝗻  @vpnplusee_free |",
+      "name": "89@oneclickvpnkeys",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 171,
-      "quality": "Good",
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.75:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&alpn=networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-channel%40.networld_vpn-&fp=chrome&security=reality&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
-    },
-    {
-      "name": "اگه میخوای قطع نشی جوین شو  @farsiproxy",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "protocol": "vless",
-      "ping": 184,
-      "quality": "Good",
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.232:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%D8%A7%DA%AF%D9%87%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C%20%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%D9%88%20%3A%20%40farsiproxy"
+      "ping": 233,
+      "quality": "Fair",
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.182:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&security=reality&sid=c39cc7310a&sni=yahoo.com&type=tcp#%E2%98%BA%EF%B8%8F89@oneclickvpnkeys"
     },
     {
       "name": "波兰 | POL",
       "flag": "🇵🇱",
       "country": "Poland",
       "protocol": "vless",
-      "ping": 307,
+      "ping": 255,
       "quality": "Fair",
       "link": "vless://4d852af3-a121-41aa-9aed-4ca40a6f7b4d@177.1.192.74:443?&security=reality&flow=xtls-rprx-vision&pbk=qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8&sid=770618b6&fp=randomized&sni=addons.mozilla.org&type=tcp&headerType=none&host=addons.mozilla.org&path=%2F#%F0%9F%87%B5%F0%9F%87%B1%20%E6%B3%A2%E5%85%B0%20%7C%20POL"
     },
@@ -332,124 +332,133 @@
       "flag": "🇸🇬",
       "country": "Singapore",
       "protocol": "vless",
-      "ping": 829,
+      "ping": 776,
       "quality": "Slow",
       "link": "vless://c3369c07-f0d2-4a2c-97ab-0d3d47803912@79.108.225.112:8443?security=reality&encryption=none&pbk=1KY_jqa2yPLBEBa-3TG77zs4ak2zQLGul4eexxCueyI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=github.com#%E8%A5%BF%E7%8F%AD%E7%89%99+V2CROSS.COM"
-    },
-    {
-      "name": "RELAY-23.227.38.11-0900",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "protocol": "trojan",
-      "ping": 13,
-      "quality": "Excellent",
-      "link": "trojan://b17fa17d-13a0-4e8a-a398-8e549ea8b208@23.227.38.11:443?security=tls&sni=syndication-statutes-wanted-logo.trycloudflare.com&type=ws&path=/argox-tr&Host=syndication-statutes-wanted-logo.trycloudflare.com#%F0%9F%8F%81RELAY-23.227.38.11-0900"
-    },
-    {
-      "name": "美国 | USA",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "protocol": "vless",
-      "ping": 43,
-      "quality": "Excellent",
-      "link": "vless://7c99dc89-bf49-45c9-acc5-e43f36657518@www.large-files.info:8443?&security=tls&fp=chrome&alpn=http%2F1.1&sni=www.large-files.info&type=ws&headerType=none&host=www.large-files.info&path=%2Fvar%2Fwww%2Fhtml%2Fvideo%2Fpreview%2Fdownload%2Fi8o0la#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
-    },
-    {
-      "name": "Telegram @Daily_Configs",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "protocol": "trojan",
-      "ping": 64,
-      "quality": "Excellent",
-      "link": "trojan://humanity@www.speedtest.net:443?security=tls&sni=www.calmlunch.com&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&host=www.calmlunch.com&path=%2Fassignment#Telegram%3A%20%40Daily_Configs"
     },
     {
       "name": "_US_美国",
       "flag": "🇨🇦",
       "country": "Canada",
       "protocol": "vless",
-      "ping": 67,
+      "ping": 32,
       "quality": "Excellent",
       "link": "vless://f49d04d6-aaa7-4013-b323-bc35b78230db@s3ws.ragingbull.de5.net:443?fp=chrome&host=s3ws.ragingbull.de5.net&path=%2Fwsrb7k2m&security=tls&sni=s3ws.ragingbull.de5.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD"
     },
     {
-      "name": "RELAY-104.18.9.83-0544",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "protocol": "trojan",
-      "ping": 70,
-      "quality": "Excellent",
-      "link": "trojan://humanity@www.calmlunch.com:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%8F%81RELAY-104.18.9.83-0544"
-    },
-    {
-      "name": "www.v2nodes.com vless-SG",
+      "name": "美国 | USA",
       "flag": "🇨🇦",
       "country": "Canada",
       "protocol": "vless",
-      "ping": 77,
+      "ping": 46,
       "quality": "Excellent",
-      "link": "vless://d342d11e-d224-4463-b982-532309285094@cf.090227.xyz:443?sni=ccc.010304.xyz&type=ws&host=ccc.010304.xyz&path=/fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG"
+      "link": "vless://7c99dc89-bf49-45c9-acc5-e43f36657518@www.large-files.info:8443?&security=tls&fp=chrome&alpn=http%2F1.1&sni=www.large-files.info&type=ws&headerType=none&host=www.large-files.info&path=%2Fvar%2Fwww%2Fhtml%2Fvideo%2Fpreview%2Fdownload%2Fi8o0la#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
     },
     {
-      "name": "www.v2nodes.com vless-GB-1... 2",
-      "flag": "🇬🇧",
-      "country": "United Kingdom",
+      "name": "美国 | USA",
+      "flag": "🇨🇦",
+      "country": "Canada",
       "protocol": "vless",
-      "ping": 104,
-      "quality": "Good",
-      "link": "vless://99955907-9070-46f0-a200-9c7a0b9d74fe@23.81.34.204:443?sni=speed.cloudflare.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%232"
+      "ping": 50,
+      "quality": "Excellent",
+      "link": "vless://e6df2095-a73c-4043-8693-8d5a03686870@cf.130519.xyz:443?&security=tls&fp=qq&sni=lucasjow.us.ci&type=ws&headerType=none&host=lucasjow.us.ci&path=%2Fcart%2Fdocs%2Fwww%2Fproxyip%3D108.160.132.132#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
     },
     {
       "name": "www.v2nodes.com vless-UA-1...",
       "flag": "🇬🇧",
       "country": "United Kingdom",
       "protocol": "vless",
-      "ping": 104,
-      "quality": "Good",
+      "ping": 77,
+      "quality": "Excellent",
       "link": "vless://5de0c218-0138-45d8-94d2-c2c3f37a1a6d@83.147.18.75:443?sni=www.bing.com&flow=xtls-rprx-vision&fp=qq&security=tls#%F0%9F%87%BA%F0%9F%87%A6%5Bwww.v2nodes.com%5D%20vless-UA-1..."
     },
     {
-      "name": "www.v2nodes.com vless-FR-1... 8",
-      "flag": "🇫🇷",
-      "country": "France",
+      "name": "www.v2nodes.com vless-GB-1... 2",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
       "protocol": "vless",
-      "ping": 119,
+      "ping": 80,
       "quality": "Good",
-      "link": "vless://81dc0b61-f9fe-4ad6-8b4e-b8c067b73712@152.228.139.33:35108?sni=www.nvidia.com&type=grpc&serviceName=grpc-common3&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-1...%20%238"
+      "link": "vless://99955907-9070-46f0-a200-9c7a0b9d74fe@23.81.34.204:443?sni=speed.cloudflare.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%232"
     },
     {
       "name": "www.v2nodes.com vless-FR-1... 6",
       "flag": "🇫🇷",
       "country": "France",
       "protocol": "vless",
-      "ping": 121,
+      "ping": 85,
       "quality": "Good",
       "link": "vless://bc659d88-a1e0-4c65-a49a-7b51b26a7a7f@31.77.227.10:52006?sni=fr.setlisting.ru&alpn=h2%2Chttp/1.1&flow=xtls-rprx-vision-udp443-udp443&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-1...%20%236"
+    },
+    {
+      "name": "www.v2nodes.com vless-FR-1... 8",
+      "flag": "🇫🇷",
+      "country": "France",
+      "protocol": "vless",
+      "ping": 96,
+      "quality": "Good",
+      "link": "vless://81dc0b61-f9fe-4ad6-8b4e-b8c067b73712@152.228.139.33:35108?sni=www.nvidia.com&type=grpc&serviceName=grpc-common3&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-1...%20%238"
+    },
+    {
+      "name": "_US_美国",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "protocol": "vless",
+      "ping": 109,
+      "quality": "Good",
+      "link": "vless://f49d04d6-aaa7-4013-b323-bc35b78230db@s4ws.ragingbull.de5.net:2083?fp=chrome&host=s4ws.ragingbull.de5.net&path=%2Fwsrb7k2m&security=tls&sni=s4ws.ragingbull.de5.net&type=ws#%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD"
+    },
+    {
+      "name": "芬兰V2CROSS.COM",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "protocol": "vless",
+      "ping": 110,
+      "quality": "Good",
+      "link": "vless://30e52776-55ac-3cb4-8d36-e2910f07e2c3@s1243.sspcccdn.xyz:10829?encryption=none&type=tcp&headerType=&fp=firefox&host=eb8953b4s861.gogocs.xyz&path=&flow=xtls-rprx-vision&security=tls&sni=u695098ueb8953b4s861.gogocs.xyz&serviceName=&mode=&alpn=h2%2Chttp%2F1.1#%E8%8A%AC%E5%85%B0+V2CROSS.COM"
+    },
+    {
+      "name": "Telegram @Daily_Configs",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "protocol": "trojan",
+      "ping": 118,
+      "quality": "Good",
+      "link": "trojan://humanity@www.speedtest.net:443?security=tls&sni=www.calmlunch.com&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&host=www.calmlunch.com&path=%2Fassignment#Telegram%3A%20%40Daily_Configs"
+    },
+    {
+      "name": "www.v2nodes.com vless-SG",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "protocol": "vless",
+      "ping": 124,
+      "quality": "Good",
+      "link": "vless://d342d11e-d224-4463-b982-532309285094@cf.090227.xyz:443?sni=ccc.010304.xyz&type=ws&host=ccc.010304.xyz&path=/fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG"
+    },
+    {
+      "name": "www.v2nodes.com vless-RO-1... 2",
+      "flag": "🇷🇴",
+      "country": "Romania",
+      "protocol": "vless",
+      "ping": 124,
+      "quality": "Good",
+      "link": "vless://40abbe13-f02e-4da2-9b19-966c2c3eb4ee@146.70.124.85:443?sni=www.datadoghq.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B7%F0%9F%87%B4%5Bwww.v2nodes.com%5D%20vless-RO-1...%20%232"
     },
     {
       "name": "HU-185.225.68.232-0542",
       "flag": "🇭🇺",
       "country": "Hungary",
       "protocol": "trojan",
-      "ping": 134,
+      "ping": 129,
       "quality": "Good",
       "link": "trojan://humanity@185.225.68.232:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%AD%F0%9F%87%BAHU-185.225.68.232-0542"
-    },
-    {
-      "name": "JP-45.32.52.173-0556",
-      "flag": "🇯🇵",
-      "country": "Japan",
-      "protocol": "trojan",
-      "ping": 136,
-      "quality": "Good",
-      "link": "trojan://e26a229d-e8f2-4ff9-8c7d-58a9d83ee437@45.32.52.173:8886?security=tls&sni=45.32.52.173#%F0%9F%87%AF%F0%9F%87%B5JP-45.32.52.173-0556"
     },
     {
       "name": "www.v2nodes.com vless-RO-1...",
       "flag": "🇷🇴",
       "country": "Romania",
       "protocol": "vless",
-      "ping": 141,
+      "ping": 133,
       "quality": "Good",
       "link": "vless://87fd990d-ca93-440a-bbd4-e8281c4a0910@109.104.106.15:443?sni=d3-ro.cloud-cdn.xyz&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B7%F0%9F%87%B4%5Bwww.v2nodes.com%5D%20vless-RO-1..."
     },
@@ -458,90 +467,81 @@
       "flag": "🇬🇧",
       "country": "United Kingdom",
       "protocol": "vless",
-      "ping": 144,
+      "ping": 134,
       "quality": "Good",
       "link": "vless://391a01e9-b664-407b-9158-610fab3f5920@3.9.135.156:51847?sni=www.tesla.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%235"
     },
     {
-      "name": "www.v2nodes.com vless-RO-1... 2",
-      "flag": "🇷🇴",
-      "country": "Romania",
-      "protocol": "vless",
-      "ping": 146,
+      "name": "US-31.76.7.45-0535",
+      "flag": "🇨🇿",
+      "country": "Czechia",
+      "protocol": "trojan",
+      "ping": 171,
       "quality": "Good",
-      "link": "vless://40abbe13-f02e-4da2-9b19-966c2c3eb4ee@146.70.124.85:443?sni=www.datadoghq.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B7%F0%9F%87%B4%5Bwww.v2nodes.com%5D%20vless-RO-1...%20%232"
+      "link": "trojan://f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km@cz-musicc.moritech.net:443?security=tls&type=grpc&serviceName=grpcbeast#%F0%9F%87%BA%F0%9F%87%B8US-31.76.7.45-0535"
     },
     {
-      "name": "芬兰V2CROSS.COM",
+      "name": "www.v2nodes.com vless-GB-1... 6",
       "flag": "🇬🇧",
       "country": "United Kingdom",
       "protocol": "vless",
-      "ping": 175,
+      "ping": 186,
       "quality": "Good",
-      "link": "vless://30e52776-55ac-3cb4-8d36-e2910f07e2c3@s1243.sspcccdn.xyz:10829?encryption=none&type=tcp&headerType=&fp=firefox&host=eb8953b4s861.gogocs.xyz&path=&flow=xtls-rprx-vision&security=tls&sni=u695098ueb8953b4s861.gogocs.xyz&serviceName=&mode=&alpn=h2%2Chttp%2F1.1#%E8%8A%AC%E5%85%B0+V2CROSS.COM"
+      "link": "vless://9f61cdf4-810d-4052-bbc7-2da0c8e20104@83.147.18.3:443?sni=www.cloudflare.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%236"
     },
     {
-      "name": "香港 | HKG 8",
-      "flag": "🇭🇰",
-      "country": "Hong Kong",
+      "name": "www.v2nodes.com vless-GB-1... 7",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
       "protocol": "vless",
-      "ping": 178,
+      "ping": 189,
       "quality": "Good",
-      "link": "vless://928e6cce-8ced-4243-9a48-a6642edd09b0@47.238.210.5:13779?sni=tesla.com&fp=chrome&security=tls#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%20%7C%20HKG%20%238"
+      "link": "vless://03fcc618-b93d-6796-6aed-8a38c975d581@186.190.211.188:443?allowInsecure=1&sni=186.190.211.188&alpn=http/1.1&fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%237"
+    },
+    {
+      "name": "JP-45.32.52.173-0556",
+      "flag": "🇯🇵",
+      "country": "Japan",
+      "protocol": "trojan",
+      "ping": 190,
+      "quality": "Good",
+      "link": "trojan://e26a229d-e8f2-4ff9-8c7d-58a9d83ee437@45.32.52.173:8886?security=tls&sni=45.32.52.173#%F0%9F%87%AF%F0%9F%87%B5JP-45.32.52.173-0556"
     },
     {
       "name": "CN中国34",
       "flag": "🇭🇰",
       "country": "Hong Kong",
       "protocol": "vless",
-      "ping": 183,
-      "quality": "Good",
+      "ping": 202,
+      "quality": "Fair",
       "link": "vless://2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5@43.198.53.11:443?encryption=none&security=tls&sni=cfed.tgzdyz2.top&type=ws&host=cfed.tgzdyz2.top&path=tg%40zdyz2#%f0%9f%87%a8%f0%9f%87%b3+CN+%e4%b8%ad%e5%9b%bd+34"
+    },
+    {
+      "name": "ES-185.114.72.31-0545",
+      "flag": "🇪🇸",
+      "country": "Spain",
+      "protocol": "trojan",
+      "ping": 204,
+      "quality": "Fair",
+      "link": "trojan://humanity@185.114.72.31:2053?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%AA%F0%9F%87%B8ES-185.114.72.31-0545"
+    },
+    {
+      "name": "www.v2nodes.com vless-FR-1... 10",
+      "flag": "🇫🇷",
+      "country": "France",
+      "protocol": "vless",
+      "ping": 204,
+      "quality": "Fair",
+      "link": "vless://bf16ee0c-8b3c-41e4-ab3a-8b48033c404e@51.77.217.70:2053?sni=www.apple.com&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-1...%20%2310"
     },
     {
       "name": "HK-209.248.32.116-0594",
       "flag": "🇭🇰",
       "country": "Hong Kong",
       "protocol": "trojan",
-      "ping": 193,
-      "quality": "Good",
+      "ping": 205,
+      "quality": "Fair",
       "link": "trojan://i99Cef@209.248.32.116:28101?security=tls#%F0%9F%87%AD%F0%9F%87%B0HK-209.248.32.116-0594"
-    },
-    {
-      "name": "www.v2nodes.com vless-SG-1... 5",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "vless",
-      "ping": 199,
-      "quality": "Good",
-      "link": "vless://0590ab38-cb22-41d3-8312-6f396a5cec58@129.150.51.127:49289?sni=www.microsoft.com&fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG-1...%20%235"
-    },
-    {
-      "name": "www.v2nodes.com vless-SG-1... 8",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "vless",
-      "ping": 200,
-      "quality": "Fair",
-      "link": "vless://9d9a048b-3aea-4b3e-b106-1106bf301feb@54.251.9.130:24146?sni=www.intel.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG-1...%20%238"
-    },
-    {
-      "name": "www.v2nodes.com vless-SG-1... 12",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "vless",
-      "ping": 207,
-      "quality": "Fair",
-      "link": "vless://814bd064-544d-4255-a070-5705c03f6da9@3.0.111.82:12972?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG-1...%20%2312"
-    },
-    {
-      "name": "www.v2nodes.com vless-SG-1... 9",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "vless",
-      "ping": 225,
-      "quality": "Fair",
-      "link": "vless://2a6c617d-98e4-49c3-95ab-76f02fcf0150@46.137.202.178:12512?sni=www.intel.com&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%B8%F0%9F%87%AC%5Bwww.v2nodes.com%5D%20vless-SG-1...%20%239"
     }
   ]
 }
