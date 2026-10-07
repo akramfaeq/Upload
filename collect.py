@@ -621,6 +621,58 @@ def rank_and_filter(servers: list[dict]) -> list[dict]:
     return selected[:MAX_SERVERS]
 
 # ══════════════════════════════════════════════════════════════
+#  إعادة التحقق من أعلى السيرفرات (ضمان عدم وجود ميتين في الأوائل)
+# ══════════════════════════════════════════════════════════════
+
+RE_VERIFY_TOP    = 15   # عدد السيرفرات الأعلى اللي نعيد اختبارها
+RE_VERIFY_ROUNDS = 2    # كم مرة نحاول لكل سيرفر قبل نحكم عليه بالموت
+
+async def _re_test_server(s: dict) -> bool:
+    """يعيد اختبار TCP للسيرفر — يرجع True إذا حي، False إذا ميت"""
+    host = s.get("host", "")
+    port = s.get("port", 443)
+    for _ in range(RE_VERIFY_ROUNDS):
+        ms = await _tcp_connect(host, port)
+        if ms is not None and MIN_PING_VALID <= ms <= MAX_PING:
+            # نحدث الـ ping بالقيمة الجديدة (أحدث وأدق)
+            s["ping"] = int(ms)
+            return True
+        await asyncio.sleep(0.3)
+    return False
+
+
+async def re_verify_top(servers: list[dict]) -> list[dict]:
+    """
+    يعيد اختبار أعلى RE_VERIFY_TOP سيرفر.
+    أي سيرفر يفشل → يُحذف من القائمة ويُستبدل بالتالي.
+    يضمن إن أول 5 سيرفرات على الأقل أحياء وشغالين.
+    """
+    if not servers:
+        return servers
+
+    top     = servers[:RE_VERIFY_TOP]
+    rest    = servers[RE_VERIFY_TOP:]
+
+    print(f"\n🔁 إعادة التحقق من أعلى {len(top)} سيرفر...")
+
+    tasks   = [_re_test_server(s) for s in top]
+    results = await asyncio.gather(*tasks)
+
+    alive   = [s for s, ok in zip(top, results) if ok]
+    dead    = [s for s, ok in zip(top, results) if not ok]
+
+    if dead:
+        print(f"  ⚠  {len(dead)} سيرفر ميت حُذف من الأوائل: "
+              + ", ".join(s.get("host","?") for s in dead))
+    else:
+        print(f"  ✅ كل أعلى {len(top)} سيرفر أحياء وجاهزين")
+
+    # أكمل بالباقي إذا احتجنا
+    final = alive + rest
+    return final[:MAX_SERVERS]
+
+
+# ══════════════════════════════════════════════════════════════
 #  الإخراج
 # ══════════════════════════════════════════════════════════════
 
@@ -677,6 +729,10 @@ async def main():
 
     # ─ ترتيب وفلترة
     best = rank_and_filter(servers)
+
+    # ─ إعادة التحقق من الأوائل (يضمن ما في ميتين في أول النتيجة)
+    async with aiohttp.ClientSession() as _verify_session:
+        best = await re_verify_top(best)
 
     # ─ ملخص
     print(f"\n{'═'*54}")
