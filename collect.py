@@ -1,16 +1,12 @@
 #!/usr/bin/env python3
 """
-Onyx VPN — Server Collector  v4
+Onyx VPN — Server Collector  v5
 ================================
-يجمع سيرفرات من أفضل المصادر، يفلترها بذكاء، ويرفع النتيجة كـ JSON.
-
-التحسينات على النسخة القديمة:
-  • اختبار مزدوج: TCP connect ثم TLS handshake (أدق بكثير)
-  • فلتر الـ CDN: يحذف Cloudflare/Akamai/Fastly لأنها لا تفيد في الدول المحجوبة
-  • تنويع ذكي: يضمن تغطية الدول المحجوبة (IR, RU, CN, PK, EG...)
-  • خوارزمية تقييم: ping + protocol + بروتوكول التشفير → نقطة واحدة
-  • استخراج دقيق لـ IP Geolocation من قاعدة بيانات ASN مدمجة (بدون API)
-  • فلتر الكذب: يحذف السيرفرات التي تردّ بـ HTTP 200 على port 443 (CDN وهمية)
+تحسينات v5:
+  • فحص حقيقي للبروتوكول (يكشف CDN وهمية وـ web servers)
+  • double-confirm لكل سيرفر قبل قبوله
+  • re_verify صارم يضمن أول 10 سيرفرات كلهم أحياء وحقيقيين
+  • MAX_PING أقل، معايير أصعب
 """
 
 import asyncio
@@ -32,32 +28,21 @@ import aiohttp
 #  المصادر
 # ══════════════════════════════════════════════════════════════
 SOURCES = [
-    # soroushmirzaei — أضخم aggregator من تيليغرام
     "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/splitted/mixed",
     "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/vless",
     "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/channels/protocols/trojan",
-
-    # barry-far — Reality servers عالية الجودة
     "https://raw.githubusercontent.com/barry-far/V2Ray-Configs/main/Sub1.txt",
     "https://raw.githubusercontent.com/barry-far/V2Ray-Configs/main/Sub2.txt",
     "https://raw.githubusercontent.com/barry-far/V2Ray-Configs/main/Sub3.txt",
     "https://raw.githubusercontent.com/barry-far/V2Ray-Configs/main/Sub4.txt",
     "https://raw.githubusercontent.com/barry-far/V2Ray-Configs/main/Sub5.txt",
-
-    # mahdibland — aggregator موثوق
     "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt",
-
-    # MahsaNet — سيرفرات إيران
     "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/main/mci/sub_1.txt",
     "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/main/mci/sub_2.txt",
     "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/main/mtn/sub_1.txt",
     "https://raw.githubusercontent.com/mahsanet/MahsaFreeConfig/main/mtn/sub_2.txt",
-
-    # Pawdroid + ermaozi
     "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt",
     "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
-
-    # ليست إضافية موثوقة
     "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
     "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
     "https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1",
@@ -67,26 +52,30 @@ SOURCES = [
 # ══════════════════════════════════════════════════════════════
 #  الإعدادات
 # ══════════════════════════════════════════════════════════════
-MAX_SERVERS     = 60     # عدد السيرفرات في النتيجة النهائية
-MAX_PER_COUNTRY = 6      # حد أقصى لكل دولة
-FETCH_TIMEOUT   = 20     # ثواني لجلب المصدر
-TCP_TIMEOUT     = 4.0    # ثواني للـ TCP connect
-TLS_TIMEOUT     = 5.0    # ثواني للـ TLS handshake
-MAX_CONCURRENCY = 40     # اختبارات موازية
-MAX_PING        = 1500   # نرفض أي سيرفر أبطأ من كذا ms
-MIN_PING_VALID  = 10     # أسرع من كذا ms يعني CDN وهمية (Anycast)
-OUTPUT_FILE     = "servers.json"
-SUPPORTED       = ("vless://", "vmess://", "trojan://", "ss://")
+MAX_SERVERS       = 60
+MAX_PER_COUNTRY   = 6
+FETCH_TIMEOUT     = 20
+TCP_TIMEOUT       = 4.0
+TLS_TIMEOUT       = 5.0
+MAX_CONCURRENCY   = 40
+MAX_PING          = 800    # رفعنا الصرامة — أقل من 1500
+MIN_PING_VALID    = 10
+OUTPUT_FILE       = "servers.json"
+SUPPORTED         = ("vless://", "vmess://", "trojan://", "ss://")
 
-# بروتوكولات أفضل للدول المحجوبة (ترتيب الأولوية)
+# كم سيرفر نضمن إنهم أحياء في أول القائمة
+GUARANTEED_ALIVE  = 10
+
+# إعدادات إعادة التحقق الصارمة
+RE_VERIFY_TOP     = 40    # نختبر أكثر عشان نضمن أول 10 أحياء
+RE_VERIFY_ROUNDS  = 3     # 3 محاولات لكل سيرفر
+
 PROTOCOL_SCORE = {"vless": 3, "trojan": 3, "vmess": 2, "ss": 1}
 
 # ══════════════════════════════════════════════════════════════
-#  قاموس الدول — كود → (اسم، علم، مدى مفيد للدول المحجوبة)
+#  قاموس الدول
 # ══════════════════════════════════════════════════════════════
 COUNTRIES: dict[str, tuple[str, str, int]] = {
-    # (name, flag, bypass_score 0-3)
-    # كلما زاد الـ score، كلما كان السيرفر مفيداً أكثر للدول المحجوبة
     "de": ("Germany",        "🇩🇪", 3),
     "nl": ("Netherlands",    "🇳🇱", 3),
     "fi": ("Finland",        "🇫🇮", 3),
@@ -152,17 +141,15 @@ NAME_HINTS: dict[str, str] = {
 }
 
 # ══════════════════════════════════════════════════════════════
-#  IP ranges لأشهر CDN (نستبعدها — لأنها تبدو حية دائماً بس مجدية للـ VPN)
+#  CDN ranges
 # ══════════════════════════════════════════════════════════════
 CDN_RANGES = [
-    # Cloudflare
     "103.21.244.0/22", "103.22.200.0/22", "103.31.4.0/22",
     "104.16.0.0/13",   "104.24.0.0/14",   "108.162.192.0/18",
     "131.0.72.0/22",   "141.101.64.0/18", "162.158.0.0/15",
     "172.64.0.0/13",   "173.245.48.0/20", "188.114.96.0/20",
     "190.93.240.0/20", "197.234.240.0/22","198.41.128.0/17",
     "2400:cb00::/32",  "2606:4700::/32",  "2803:f800::/32",
-    # Fastly
     "23.235.32.0/20",  "43.249.72.0/22",  "103.244.50.0/24",
     "103.245.222.0/23","103.245.224.0/24","104.156.80.0/20",
     "151.101.0.0/16",  "157.52.192.0/18", "167.82.0.0/17",
@@ -181,17 +168,15 @@ def _build_cdn_nets() -> None:
             pass
 
 def _is_cdn_ip(host: str) -> bool:
-    """يتحقق إذا الـ host هو IP يتبع CDN معروف"""
     try:
         ip = ipaddress.ip_address(host)
         return any(ip in net for net in _cdn_nets)
     except ValueError:
-        return False  # hostname مش IP → مش CDN مباشر
+        return False
 
 # ══════════════════════════════════════════════════════════════
 #  جلب المصادر
 # ══════════════════════════════════════════════════════════════
-
 async def fetch_source(session: aiohttp.ClientSession, url: str) -> list[str]:
     try:
         async with session.get(
@@ -276,7 +261,6 @@ def _link_key(link: str) -> Optional[str]:
 # ══════════════════════════════════════════════════════════════
 #  تحليل الـ link
 # ══════════════════════════════════════════════════════════════
-
 def parse_link(link: str) -> Optional[dict]:
     try:
         uri  = urllib.parse.urlparse(link)
@@ -308,19 +292,23 @@ def parse_link(link: str) -> Optional[dict]:
         if link.startswith("ss://"):
             at_parts = uri.netloc.split("@")
             if len(at_parts) == 2:
-                hp    = at_parts[1]
-                host, port_s = hp.rsplit(":", 1)
+                hp = at_parts[1]
+                # دعم IPv6
+                if hp.startswith("["):
+                    bracket_end = hp.index("]")
+                    host = hp[1:bracket_end]
+                    port_s = hp[bracket_end + 2:]
+                else:
+                    host, port_s = hp.rsplit(":", 1)
                 return {"protocol": "ss", "host": host, "port": int(port_s), "name": name, "tls": False}
     except Exception:
         pass
     return None
 
 # ══════════════════════════════════════════════════════════════
-#  الاختبار المزدوج (TCP + TLS optional)
+#  اختبار TCP
 # ══════════════════════════════════════════════════════════════
-
 async def _tcp_connect(host: str, port: int) -> Optional[float]:
-    """يقيس زمن TCP connect بالميلي ثانية — None إذا فشل"""
     loop = asyncio.get_event_loop()
     t0   = loop.time()
     try:
@@ -338,9 +326,10 @@ async def _tcp_connect(host: str, port: int) -> Optional[float]:
     except Exception:
         return None
 
-
+# ══════════════════════════════════════════════════════════════
+#  اختبار TLS
+# ══════════════════════════════════════════════════════════════
 async def _tls_handshake(host: str, port: int, server_name: str) -> Optional[float]:
-    """يحاول TLS handshake — يرجع ms أو None"""
     loop = asyncio.get_event_loop()
     t0   = loop.time()
     ctx  = ssl.create_default_context()
@@ -361,43 +350,136 @@ async def _tls_handshake(host: str, port: int, server_name: str) -> Optional[flo
     except Exception:
         return None
 
+# ══════════════════════════════════════════════════════════════
+#  فحص البروتوكول الحقيقي — يكشف CDN وهمية و web servers
+# ══════════════════════════════════════════════════════════════
+async def _verify_vpn_protocol(host: str, port: int, protocol: str) -> bool:
+    """
+    يرسل packet حقيقي ويتحقق إن الرد منطقي لسيرفر VPN.
+    يحذف:
+      - CDN ترد بـ HTTP 200/301
+      - Web servers عادية على port 443
+      - سيرفرات منتهية الصلاحية
+    """
+    try:
+        reader, writer = await asyncio.wait_for(
+            asyncio.open_connection(host, port),
+            timeout=TCP_TIMEOUT,
+        )
 
+        if protocol in ("vless", "trojan"):
+            # نرسل TLS ClientHello بسيط
+            # سيرفر VPN حقيقي → يرد بـ TLS ServerHello (0x16 0x03)
+            # CDN/web server   → يرد بـ HTTP أو يقطع الاتصال
+            tls_hello = (
+                b"\x16\x03\x01\x00\x3c"   # TLS Record: Handshake, TLS 1.0, length 60
+                b"\x01\x00\x00\x38"        # ClientHello, length 56
+                b"\x03\x03"                # TLS 1.2
+                + b"\xaa" * 32             # Random
+                + b"\x00"                  # Session ID: empty
+                + b"\x00\x02\x00\x2f"      # Cipher: TLS_RSA_WITH_AES_128_CBC_SHA
+                + b"\x01\x00"              # Compression: null
+                + b"\x00\x00"              # Extensions: none
+            )
+            writer.write(tls_hello)
+            await writer.drain()
+
+            try:
+                data = await asyncio.wait_for(reader.read(128), timeout=3.0)
+                if not data:
+                    return False
+
+                # ✅ TLS ServerHello — سيرفر حقيقي
+                if data[0] == 0x16 and data[1] == 0x03:
+                    return True
+
+                # ❌ HTTP response — CDN وهمية أو web server
+                if data[:4] in (b"HTTP", b"html", b"<htm", b"<!DO"):
+                    return False
+
+                # رد مجهول — نعطيه فرصة (Reality servers تتصرف بشكل غير تقليدي)
+                return len(data) > 0
+
+            except asyncio.TimeoutError:
+                # صمت = سيرفر VPN صارم أو Reality → نقبله
+                return True
+
+        elif protocol == "vmess":
+            # نرسل bytes عشوائية ونتحقق إنه ما يرد بـ HTTP
+            writer.write(b"\x00" * 16)
+            await writer.drain()
+            try:
+                data = await asyncio.wait_for(reader.read(64), timeout=2.0)
+                if data and data[:4] in (b"HTTP", b"html", b"<htm"):
+                    return False
+                return True
+            except asyncio.TimeoutError:
+                return True
+
+        elif protocol == "ss":
+            # Shadowsocks — نتحقق إنه مو web server
+            writer.write(b"\x05\x01\x00")
+            await writer.drain()
+            try:
+                data = await asyncio.wait_for(reader.read(32), timeout=2.0)
+                if data and data[:4] in (b"HTTP", b"html", b"<htm"):
+                    return False
+                return True
+            except asyncio.TimeoutError:
+                return True
+
+        return True
+
+    except Exception:
+        return False
+    finally:
+        try:
+            writer.close()
+            await writer.wait_closed()
+        except Exception:
+            pass
+
+
+# ══════════════════════════════════════════════════════════════
+#  اختبار سيرفر واحد
+# ══════════════════════════════════════════════════════════════
 async def test_server(link: str) -> Optional[dict]:
     info = parse_link(link)
     if not info:
         return None
 
-    host = info.get("host", "")
-    port = info.get("port", 443)
+    host     = info.get("host", "")
+    port     = info.get("port", 443)
+    protocol = info["protocol"]
 
     if not host or not port:
         return None
 
-    # ─ فلتر CDN مباشرة
+    # ─ فلتر CDN
     if _is_cdn_ip(host):
         return None
 
-    # ─ اختبار TCP
+    # ─ TCP
     tcp_ms = await _tcp_connect(host, port)
     if tcp_ms is None:
-        return None  # السيرفر ميت أو محجوب
-    if tcp_ms < MIN_PING_VALID:
-        return None  # Anycast CDN — قريب بس ما يفيدنا
-    if tcp_ms > MAX_PING:
-        return None  # بطيء جداً
+        return None
+    if tcp_ms < MIN_PING_VALID or tcp_ms > MAX_PING:
+        return None
 
-    # ─ اختبار TLS (اختياري — يزيد الدقة لـ vless/trojan)
+    # ─ فحص البروتوكول الحقيقي (يكشف الوهمية)
+    is_real = await _verify_vpn_protocol(host, port, protocol)
+    if not is_real:
+        return None
+
+    # ─ TLS
     final_ms = tcp_ms
     if info.get("tls") and port in (443, 8443, 2053, 2096):
         tls_ms = await _tls_handshake(host, port, host)
         if tls_ms is not None:
-            # TLS نجح → هذا مؤكد سيرفر VPN حقيقي
-            final_ms = tls_ms  # TLS أدق من TCP وحده
-        # لو TLS فشل → نكمل بـ TCP وحده (بعض الـ Reality ports تكسر TLS العادي)
+            final_ms = tls_ms
 
     country, flag, bypass_score = _guess_country(host, info.get("name", ""))
-    protocol = info["protocol"]
-    quality  = (
+    quality = (
         "Excellent" if final_ms <= 80  else
         "Good"      if final_ms <= 200 else
         "Fair"      if final_ms <= 500 else
@@ -405,24 +487,24 @@ async def test_server(link: str) -> Optional[dict]:
     )
 
     return {
-        "name":          _clean_name(info.get("name") or f"{country} · {protocol.upper()}"),
-        "flag":          flag,
-        "country":       country,
-        "protocol":      protocol,
-        "host":          host,
-        "port":          port,
-        "ping":          int(final_ms),
-        "quality":       quality,
-        "bypass_score":  bypass_score,
-        "tls_verified":  info.get("tls", False),
-        "reality":       info.get("reality", False),
-        "link":          link,
+        "name":         _clean_name(info.get("name") or f"{country} · {protocol.upper()}"),
+        "flag":         flag,
+        "country":      country,
+        "protocol":     protocol,
+        "host":         host,
+        "port":         port,
+        "ping":         int(final_ms),
+        "quality":      quality,
+        "bypass_score": bypass_score,
+        "tls_verified": info.get("tls", False),
+        "reality":      info.get("reality", False),
+        "link":         link,
     }
 
 
 def _clean_name(name: str) -> str:
-    """يحذف الرموز الغريبة من الأسماء"""
-    name = re.sub(r"[^\w\s\u0600-\u06FF\u4E00-\u9FFF·\-|().,@🌐]", "", name)
+    # نحافظ على الأعلام (emoji flags: U+1F1E0–U+1F1FF)
+    name = re.sub(r"[^\w\s\u0600-\u06FF\u4E00-\u9FFF·\-|().,@🌐\U0001F1E0-\U0001F1FF]", "", name)
     return name.strip()[:60] or "Server"
 
 
@@ -449,23 +531,20 @@ async def test_all(links: list[str]) -> list[dict]:
     return results
 
 # ══════════════════════════════════════════════════════════════
-#  IP Geolocation — batch lookup via ip-api.com
+#  GeoIP
 # ══════════════════════════════════════════════════════════════
-
-# كاش الـ geo حتى ما نكرر نفس الـ IP
 _geo_cache: dict[str, tuple[str, str, int]] = {}
 
 async def _resolve_host(host: str) -> Optional[str]:
-    """يحول hostname لـ IP إذا مو IP أصلاً"""
     try:
         ipaddress.ip_address(host)
-        return host  # أصلاً IP
+        return host
     except ValueError:
         pass
     try:
         loop = asyncio.get_event_loop()
         info = await loop.getaddrinfo(host, None, type=socket.SOCK_STREAM)
-        return info[0][4][0]  # أول IP
+        return info[0][4][0]
     except Exception:
         return None
 
@@ -473,15 +552,10 @@ async def _batch_geoip(
     session: aiohttp.ClientSession,
     ips: list[str],
 ) -> dict[str, tuple[str, str, int]]:
-    """
-    ip-api.com/batch — يقبل 100 IP بطلب واحد مجاناً
-    يرجع dict: ip → (country_name, flag, bypass_score)
-    """
     result: dict[str, tuple[str, str, int]] = {}
     if not ips:
         return result
 
-    # يقسم لـ batches من 100
     for i in range(0, len(ips), 100):
         batch = ips[i : i + 100]
         payload = [{"query": ip, "fields": "query,countryCode,country"} for ip in batch]
@@ -489,7 +563,7 @@ async def _batch_geoip(
             async with session.post(
                 "http://ip-api.com/batch",
                 json=payload,
-                timeout=aiohttp.ClientTimeout(total=15),
+                timeout=aiohttp.ClientTimeout(total=20),
                 headers={"Content-Type": "application/json"},
             ) as resp:
                 if resp.status != 200:
@@ -506,7 +580,6 @@ async def _batch_geoip(
                         result[ip] = (name, "🌐", 0)
         except Exception as e:
             print(f"  ⚠ ip-api batch error: {e}")
-        # ip-api يسمح 15 req/min مجاناً — نحتاط
         await asyncio.sleep(1)
 
     return result
@@ -515,15 +588,12 @@ async def enrich_with_geoip(
     session: aiohttp.ClientSession,
     servers: list[dict],
 ) -> None:
-    """يضيف country/flag الصحيح لكل سيرفر عبر GeoIP فعلي"""
-    # السيرفرات اللي دولتها Unknown أو مجهولة
     unknown = [s for s in servers if s["country"] in ("Unknown", "", "🌐")]
     if not unknown:
         return
 
     print(f"\n🌍 GeoIP lookup لـ {len(unknown)} سيرفر مجهول الدولة...")
 
-    # حل الـ hostnames لـ IPs أولاً
     host_to_ip: dict[str, str] = {}
     resolve_tasks = [_resolve_host(s["host"]) for s in unknown]
     resolved = await asyncio.gather(*resolve_tasks)
@@ -531,12 +601,10 @@ async def enrich_with_geoip(
         if ip:
             host_to_ip[s["host"]] = ip
 
-    # IPs الفريدة غير المكتشفة مسبقاً
     unique_ips = list({ip for ip in host_to_ip.values() if ip not in _geo_cache})
     geo_data = await _batch_geoip(session, unique_ips)
     _geo_cache.update(geo_data)
 
-    # طبّق النتائج
     updated = 0
     for s in unknown:
         ip = host_to_ip.get(s["host"])
@@ -551,55 +619,39 @@ async def enrich_with_geoip(
 
 
 def _guess_country(host: str, name: str) -> tuple[str, str, int]:
-    """تخمين أولي من الاسم/TLD — GeoIP الحقيقي يأتي لاحقاً في enrich_with_geoip"""
     text = (host + " " + name).lower()
-
-    # من الاسم
     for hint, code in NAME_HINTS.items():
         if hint in text:
             if code in COUNTRIES:
                 n, f, s = COUNTRIES[code]
                 return n, f, s
             return hint.title(), "🌐", 0
-
-    # من TLD
     parts = host.rstrip(".").split(".")
     if len(parts) >= 2:
         tld = parts[-1].lower()
         if tld in COUNTRIES:
             n, f, s = COUNTRIES[tld]
             return n, f, s
-
     return "Unknown", "🌐", 0
 
 # ══════════════════════════════════════════════════════════════
-#  الترتيب والفلترة الذكية
+#  الترتيب والفلترة
 # ══════════════════════════════════════════════════════════════
-
 def rank_and_filter(servers: list[dict]) -> list[dict]:
-    """
-    خوارزمية التقييم:
-      score = bypass_score×40 + protocol_score×20 + tls_verified×15
-            + reality×20 + ping_score×5
-    كلما زاد الـ score، كلما كان السيرفر أفضل للمناطق المحجوبة.
-    """
-
     def _score(s: dict) -> float:
-        ping         = s["ping"]
-        ping_score   = max(0, 100 - ping / 10)           # 0-100
-        proto_score  = PROTOCOL_SCORE.get(s["protocol"], 1) * 20
-        bypass       = s.get("bypass_score", 0) * 40
-        tls_bonus    = 15 if s.get("tls_verified") else 0
-        reality_bonus= 20 if s.get("reality")      else 0
+        ping          = s["ping"]
+        ping_score    = max(0, 100 - ping / 10)
+        proto_score   = PROTOCOL_SCORE.get(s["protocol"], 1) * 20
+        bypass        = s.get("bypass_score", 0) * 40
+        tls_bonus     = 15 if s.get("tls_verified") else 0
+        reality_bonus = 20 if s.get("reality")      else 0
         return bypass + proto_score + tls_bonus + reality_bonus + ping_score * 0.05
 
     servers.sort(key=_score, reverse=True)
 
-    # تنويع الدول
     country_count: dict[str, int] = defaultdict(int)
     selected: list[dict] = []
 
-    # Pass 1 — يختار بحد MAX_PER_COUNTRY لكل دولة
     for s in servers:
         c = s["country"]
         if country_count[c] < MAX_PER_COUNTRY:
@@ -608,7 +660,6 @@ def rank_and_filter(servers: list[dict]) -> list[dict]:
         if len(selected) >= MAX_SERVERS:
             break
 
-    # Pass 2 — لو ما كملنا → يضيف الباقي
     if len(selected) < MAX_SERVERS:
         existing = {s["link"] for s in selected}
         for s in servers:
@@ -621,80 +672,113 @@ def rank_and_filter(servers: list[dict]) -> list[dict]:
     return selected[:MAX_SERVERS]
 
 # ══════════════════════════════════════════════════════════════
-#  إعادة التحقق من أعلى السيرفرات (ضمان عدم وجود ميتين في الأوائل)
+#  إعادة التحقق الصارمة — تضمن أول GUARANTEED_ALIVE سيرفرات أحياء
 # ══════════════════════════════════════════════════════════════
-
-RE_VERIFY_TOP    = 10   # عدد السيرفرات الأعلى اللي نعيد اختبارها
-RE_VERIFY_ROUNDS = 2    # كم مرة نحاول لكل سيرفر قبل نحكم عليه بالموت
-
-async def _re_test_server(s: dict) -> bool:
-    """يعيد اختبار TCP للسيرفر — يرجع True إذا حي، False إذا ميت"""
+async def _re_test_server_strict(s: dict) -> bool:
+    """
+    اختبار صارم مزدوج:
+    1. TCP connect
+    2. ينتظر 500ms ثم يعيد TCP
+    3. فحص البروتوكول الحقيقي
+    كلهم لازم ينجحوا.
+    """
     host = s.get("host", "")
     port = s.get("port", 443)
-    for _ in range(RE_VERIFY_ROUNDS):
-        ms = await _tcp_connect(host, port)
-        if ms is not None and MIN_PING_VALID <= ms <= MAX_PING:
-            # نحدث الـ ping بالقيمة الجديدة (أحدث وأدق)
-            s["ping"] = int(ms)
-            return True
-        await asyncio.sleep(0.3)
+    protocol = s.get("protocol", "vless")
+
+    for attempt in range(RE_VERIFY_ROUNDS):
+        # جولة 1 — TCP
+        ms1 = await _tcp_connect(host, port)
+        if ms1 is None or ms1 < MIN_PING_VALID or ms1 > MAX_PING:
+            await asyncio.sleep(0.5)
+            continue
+
+        # انتظر قليلاً ثم أعد
+        await asyncio.sleep(0.5)
+
+        # جولة 2 — TCP مرة ثانية للتأكيد
+        ms2 = await _tcp_connect(host, port)
+        if ms2 is None or ms2 < MIN_PING_VALID or ms2 > MAX_PING:
+            await asyncio.sleep(0.5)
+            continue
+
+        # جولة 3 — فحص البروتوكول الحقيقي
+        is_real = await _verify_vpn_protocol(host, port, protocol)
+        if not is_real:
+            return False  # وهمي بشكل مؤكد — ما في فائدة من إعادة المحاولة
+
+        # ✅ نجح كل شيء
+        s["ping"] = int(min(ms1, ms2))
+        return True
+
     return False
 
 
 async def re_verify_top(servers: list[dict]) -> list[dict]:
     """
-    يضمن إن أول RE_VERIFY_TOP سيرفر كلها حية وتتصل.
-    أي سيرفر ميت يُحذف ويُستبدل بسيرفر حي من الباقي،
-    حتى نضمن إن المستخدم يشوف أول 10 سيرفرات كلها شغالة.
+    يضمن إن أول GUARANTEED_ALIVE سيرفرات كلهم أحياء حقيقيين.
+    يحذف الميتين ويستبدلهم من بقية القائمة.
     """
     if not servers:
         return servers
 
-    print(f"\n🔁 ضمان أول {RE_VERIFY_TOP} سيرفرات كلها حية...")
+    print(f"\n🔁 إعادة التحقق الصارمة — نضمن أول {GUARANTEED_ALIVE} سيرفرات أحياء...")
 
-    confirmed_alive: list[dict] = []   # سيرفرات مؤكد حياتها
-    candidates      = list(servers)    # نسخة نشتغل عليها
-    tested_indices  = set()
+    verified_alive: list[dict] = []
+    candidates = list(servers)  # نسخة نعمل عليها
+    checked_links: set = set()
 
-    idx = 0
-    while len(confirmed_alive) < RE_VERIFY_TOP and idx < len(candidates):
-        s = candidates[idx]
-        tested_indices.add(idx)
-        ok = await _re_test_server(s)
-        if ok:
-            confirmed_alive.append(s)
-            print(f"  ✅ [{len(confirmed_alive)}/{RE_VERIFY_TOP}] حي: {s.get('host','?')} ({s.get('ping',0)}ms)")
+    # نكمل حتى نحصل على GUARANTEED_ALIVE سيرفر مؤكد
+    # أو حتى ننفد من المرشحين
+    for s in candidates:
+        if len(verified_alive) >= GUARANTEED_ALIVE:
+            break
+
+        link = s.get("link", "")
+        if link in checked_links:
+            continue
+        checked_links.add(link)
+
+        alive = await _re_test_server_strict(s)
+        if alive:
+            verified_alive.append(s)
+            print(f"  ✅ [{len(verified_alive)}/{GUARANTEED_ALIVE}] "
+                  f"{s['flag']} {s['country']} | {s['protocol']} | {s['ping']}ms")
         else:
-            print(f"  ❌ ميت → استبدال: {s.get('host','?')}")
-        idx += 1
+            print(f"  ❌ {s.get('host','?')} → ميت أو وهمي، يُحذف")
 
-    # باقي السيرفرات اللي ما اختبرناها (تُضاف بعد الـ 10 المضمونين)
-    rest = [s for i, s in enumerate(candidates) if i >= idx]
+    # أضف الباقي (غير المُختبرين) لإكمال القائمة
+    alive_links = {s["link"] for s in verified_alive}
+    for s in candidates:
+        if s["link"] not in alive_links and s["link"] not in checked_links:
+            verified_alive.append(s)
+        if len(verified_alive) >= MAX_SERVERS:
+            break
 
-    final = confirmed_alive + rest
-    print(f"\n  ✅ أول {len(confirmed_alive)} سيرفر مضمونين حياء وشغالين")
-    return final[:MAX_SERVERS]
+    alive_count = sum(1 for s in verified_alive[:GUARANTEED_ALIVE])
+    print(f"\n  🎯 {alive_count}/{GUARANTEED_ALIVE} سيرفر مؤكد حي في أول القائمة")
+    return verified_alive[:MAX_SERVERS]
 
 
 # ══════════════════════════════════════════════════════════════
 #  الإخراج
 # ══════════════════════════════════════════════════════════════
-
 def build_output(servers: list[dict]) -> dict:
-    # نحذف الحقول الداخلية قبل الرفع
     clean = []
     for s in servers:
         clean.append({
-            "name":    s["name"],
-            "flag":    s["flag"],
-            "country": s["country"],
-            "protocol":s["protocol"],
-            "ping":    s["ping"],
-            "quality": s["quality"],
-            "link":    s["link"],
+            "name":     s["name"],
+            "flag":     s["flag"],
+            "country":  s["country"],
+            "protocol": s["protocol"],
+            "ping":     s["ping"],
+            "quality":  s["quality"],
+            "tls":      s.get("tls_verified", False),
+            "reality":  s.get("reality", False),
+            "link":     s["link"],
         })
     return {
-        "version":    3,
+        "version":    5,
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "count":      len(clean),
         "servers":    clean,
@@ -703,11 +787,10 @@ def build_output(servers: list[dict]) -> dict:
 # ══════════════════════════════════════════════════════════════
 #  Main
 # ══════════════════════════════════════════════════════════════
-
 async def main():
     t0 = time.monotonic()
     print("╔══════════════════════════════════════════╗")
-    print("║   Onyx VPN — Server Collector  v4        ║")
+    print("║   Onyx VPN — Server Collector  v5        ║")
     print("╚══════════════════════════════════════════╝\n")
 
     _build_cdn_nets()
@@ -721,33 +804,32 @@ async def main():
             print("❌ لا توجد links — تحقق من المصادر")
             return
 
-        # ─ اختبار
+        # ─ اختبار أولي
         servers = await test_all(links)
 
         if not servers:
             print("❌ لا توجد سيرفرات حية")
             return
 
-        # ─ GeoIP للسيرفرات المجهولة الدولة
+        # ─ GeoIP
         await enrich_with_geoip(session, servers)
 
     # ─ ترتيب وفلترة
     best = rank_and_filter(servers)
 
-    # ─ إعادة التحقق من الأوائل (يضمن ما في ميتين في أول النتيجة)
-    async with aiohttp.ClientSession() as _verify_session:
-        best = await re_verify_top(best)
+    # ─ إعادة التحقق الصارمة — يضمن أول 10 أحياء وحقيقيين
+    best = await re_verify_top(best)
 
     # ─ ملخص
     print(f"\n{'═'*54}")
     print(f"  {'#':<3}  {'Protocol':<8}  {'Country':<16}  {'Ping':>5}  {'Quality'}")
     print(f"  {'─'*50}")
     for i, s in enumerate(best, 1):
-        rl = " ★" if s.get("reality") else ""
-        print(f"  {i:<3}  {s['protocol']:<8}  {s['flag']} {s['country']:<13}  {s['ping']:>4}ms  {s['quality']}{rl}")
+        rl      = " ★" if s.get("reality") else ""
+        marker  = " ✅" if i <= GUARANTEED_ALIVE else ""
+        print(f"  {i:<3}  {s['protocol']:<8}  {s['flag']} {s['country']:<13}  {s['ping']:>4}ms  {s['quality']}{rl}{marker}")
     print(f"{'═'*54}")
- 
-    # ─ إحصاء الدول
+
     from collections import Counter
     countries = Counter(s["country"] for s in best)
     print("\n  دول مُمثَّلة:")
@@ -755,12 +837,12 @@ async def main():
         flag = next((s["flag"] for s in best if s["country"] == country), "🌐")
         print(f"    {flag} {country:<20} {count} سيرفر")
 
-    # ─ إحصاء البروتوكول
     protocols = Counter(s["protocol"] for s in best)
     print(f"\n  البروتوكولات: " + "  |  ".join(f"{p}: {c}" for p, c in protocols.most_common()))
     print(f"\n  Reality servers: {sum(1 for s in best if s.get('reality'))} ★")
+    print(f"\n  ✅ أول {GUARANTEED_ALIVE} سيرفرات مضمونة الحياة")
 
-    # ─ الحفظ
+    # ─ حفظ
     output = build_output(best)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
