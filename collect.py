@@ -746,7 +746,7 @@ async def main():
         rl = " ★" if s.get("reality") else ""
         print(f"  {i:<3}  {s['protocol']:<8}  {s['flag']} {s['country']:<13}  {s['ping']:>4}ms  {s['quality']}{rl}")
     print(f"{'═'*54}")
-
+ 
     # ─ إحصاء الدول
     from collections import Counter
     countries = Counter(s["country"] for s in best)
