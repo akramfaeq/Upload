@@ -1,65 +1,54 @@
 {
   "version": 5,
-  "updated_at": "2026-10-08T18:49:42.818241+00:00",
+  "updated_at": "2026-10-08T22:47:05.708229+00:00",
   "count": 60,
   "servers": [
-    {
-      "name": "🇩🇪 德国 | DEU",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "vless",
-      "ping": 150,
-      "quality": "Good",
-      "tls": true,
-      "reality": true,
-      "link": "vless://cd55b3ae-6833-4eff-be18-55bd92164071@189.24.108.152:59719?&security=reality&flow=xtls-rprx-vision&pbk=cWI4RpOZJqkX1HE9pQIZQ8eNeLWGX8UEzECyRehQnlQ&sid=6e6f9fa5decc02&fp=chrome&sni=www.sony.lu&type=tcp&headerType=none&host=www.sony.lu&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU"
-    },
     {
       "name": "🇳🇱 荷兰 | NLD",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 146,
+      "ping": 141,
       "quality": "Fair",
       "tls": true,
       "reality": true,
       "link": "vless://40781fd4-c7df-4aeb-bd5a-ecfa3ba7b841@217.60.24.36:443?&security=reality&flow=xtls-rprx-vision&pbk=xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM&sid=a7c31f92&fp=firefox&sni=cipher961.filebeam.website&type=tcp&headerType=none&host=cipher961.filebeam.website&path=%2F#%F0%9F%87%B3%F0%9F%87%B1%20%E8%8D%B7%E5%85%B0%20%7C%20NLD"
     },
     {
-      "name": "阿富汗V2CROSS.COM",
+      "name": "俄罗斯V2CROSS.COM",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 160,
+      "ping": 182,
       "quality": "Slow",
       "tls": true,
       "reality": true,
-      "link": "vless://e75ad2eb-6c1f-45ce-8023-f5f10875df66@103.244.145.144:443?security=reality&encryption=none&pbk=f4EJP55daJRlJkcZbbGsY-gFGGFGiXPPdfVxtNWQPCE&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=zsde.eu-cdn294.com&sid=c8621ebb1e56abb3#%E9%98%BF%E5%AF%8C%E6%B1%97+V2CROSS.COM"
+      "link": "vless://579b72a5-785a-4fb6-ac64-1de2f8c49601@147.45.63.64:443?security=reality&encryption=none&pbk=9J5SrrBYJ4Tz_zpSM3n-EWuin5jmUqEI8LJ5htsGZy8&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cloudflare.com#%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM"
     },
     {
-      "name": "🇷🇴RO-77.74.123.106-0295",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "trojan",
-      "ping": 152,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.106:4443?security=tls&sni=grape-test-italy.dynuddns.net#%F0%9F%87%B7%F0%9F%87%B4RO-77.74.123.106-0295"
-    },
-    {
-      "name": "🇳🇱NL-45.87.41.18-0543",
+      "name": "🇳🇱NL-45.87.41.18-0430",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 142,
+      "ping": 139,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0543"
+      "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0430"
     },
     {
-      "name": "🇩🇪DE-185.220.100.168-0547",
+      "name": "🇷🇴RO-77.74.123.106-0469",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "protocol": "trojan",
+      "ping": 145,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z@77.74.123.106:4443?security=tls&sni=grape-test-italy.dynuddns.net#%F0%9F%87%B7%F0%9F%87%B4RO-77.74.123.106-0469"
+    },
+    {
+      "name": "🇩🇪DE-185.220.100.168-0434",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
@@ -67,36 +56,47 @@
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "trojan://humanity@185.220.100.168:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.220.100.168-0547"
+      "link": "trojan://humanity@185.220.100.168:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.220.100.168-0434"
     },
     {
-      "name": "🇩🇪DE-185.255.179.166-0541",
+      "name": "🇩🇪DE-185.255.179.166-0428",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 175,
+      "ping": 173,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.255.179.166-0541"
+      "link": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.255.179.166-0428"
     },
     {
-      "name": "🇩🇪DE-31.77.168.21-0538",
+      "name": "🇩🇪DE-31.77.168.21-0424",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 149,
+      "ping": 154,
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "trojan://MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo@31.77.168.21:443?security=tls&sni=d3-de2.cloud-cdn.xyz&type=grpc&serviceName=ajv#%F0%9F%87%A9%F0%9F%87%AADE-31.77.168.21-0538"
+      "link": "trojan://MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo@31.77.168.21:443?security=tls&sni=d3-de2.cloud-cdn.xyz&type=grpc&serviceName=ajv#%F0%9F%87%A9%F0%9F%87%AADE-31.77.168.21-0424"
+    },
+    {
+      "name": "🇩🇪DE-63.178.198.94-0154",
+      "flag": "🇩🇪",
+      "country": "Germany",
+      "protocol": "trojan",
+      "ping": 155,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@pleased-albacore.rooster465.autos:443?security=tls&sni=pleased-albacore.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AADE-63.178.198.94-0154"
     },
     {
       "name": "🇸🇪 瑞典 | SWE",
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 162,
+      "ping": 161,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -107,176 +107,220 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 589,
+      "ping": 148,
       "quality": "Slow",
       "tls": true,
       "reality": false,
       "link": "vless://88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11@13.143.172.203:443?encryption=none&security=tls&type=tcp#%F0%9F%87%A9%F0%9F%87%AA_DE_%E5%BE%B7%E5%9B%BD"
     },
     {
-      "name": "UnitedStates",
+      "name": "𝗝𝗼𝗶𝗻  @vpnplusee_free | 🇺🇸",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 195,
+      "ping": 172,
       "quality": "Good",
       "tls": true,
       "reality": true,
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.231:443?security=reality&type=tcp&packetEncoding=none&allowInsecure=1&sni=yahoo.com&fp=ios&flow=xtls-rprx-vision&sid=c39cc7310a&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg#United+States"
-    },
-    {
-      "name": "@mon_proxys کانالمون",
-      "flag": "🇺🇸",
-      "country": "United States",
-      "protocol": "vless",
-      "ping": 215,
-      "quality": "Fair",
-      "tls": true,
-      "reality": true,
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.16:443?encryption=none&type=tcp&security=reality&headerType=none&sni=yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a&flow=xtls-rprx-vision#%40mon_proxys%20%DA%A9%D8%A7%D9%86%D8%A7%D9%84%D9%85%D9%88%D9%86"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.212:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&security=reality&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
     },
     {
       "name": "𝗝𝗼𝗶𝗻  @vpnplusee_free | 🇺🇸",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 230,
-      "quality": "Fair",
+      "ping": 173,
+      "quality": "Good",
       "tls": true,
       "reality": true,
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.168:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.95:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=yahoo.com&security=reality&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
     },
     {
       "name": "𝗝𝗼𝗶𝗻  @vpnplusee_free | 🇺🇸",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 384,
-      "quality": "Fair",
+      "ping": 173,
+      "quality": "Good",
       "tls": true,
       "reality": true,
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.35:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.235:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
     },
     {
       "name": "اگه میخوای قطع نشی جوین شو  @farsiproxy",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 434,
-      "quality": "Fair",
+      "ping": 174,
+      "quality": "Good",
       "tls": true,
       "reality": true,
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.184:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%D8%A7%DA%AF%D9%87%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C%20%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%D9%88%20%3A%20%40farsiproxy"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.232:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%D8%A7%DA%AF%D9%87%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C%20%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%D9%88%20%3A%20%40farsiproxy"
+    },
+    {
+      "name": "@i10VPN",
+      "flag": "🇺🇸",
+      "country": "United States",
+      "protocol": "vless",
+      "ping": 175,
+      "quality": "Good",
+      "tls": true,
+      "reality": true,
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.225:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%40i10VPN%F0%9F%8C%95"
     },
     {
       "name": "𝗝𝗼𝗶𝗻  @vpnplusee_free | 🇺🇸",
       "flag": "🇺🇸",
       "country": "United States",
       "protocol": "vless",
-      "ping": 471,
-      "quality": "Fair",
+      "ping": 176,
+      "quality": "Good",
       "tls": true,
       "reality": true,
-      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.89:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
+      "link": "vless://d65cc14c-f53f-4fe2-b262-97856601319c@169.40.42.168:443?security=reality&encryption=none&pbk=e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg&headerType=none&fp=ios&type=tcp&flow=xtls-rprx-vision&sni=yahoo.com&sid=c39cc7310a#%F0%9D%97%9D%F0%9D%97%BC%F0%9D%97%B6%F0%9D%97%BB%20%E2%9E%A0%20%40vpnplusee_free%20%7C%20%F0%9F%87%BA%F0%9F%87%B8"
     },
     {
-      "name": "🇬🇧GB英国3",
+      "name": "@FarazV2ray",
       "flag": "🇬🇧",
       "country": "United Kingdom",
       "protocol": "vless",
-      "ping": 10,
-      "quality": "Excellent",
+      "ping": 350,
+      "quality": "Fair",
       "tls": true,
-      "reality": false,
-      "link": "vless://f775978b-6e22-41a8-ae5e-5f9779e6745f@194.36.55.198:8443?encryption=none&security=tls&sni=juzibaipiao.5112233.xyz&type=ws&host=juzibaipiao.5112233.xyz&path=%2f%3fed%3d2048#%f0%9f%87%ac%f0%9f%87%a7+GB+%e8%8b%b1%e5%9b%bd+3"
+      "reality": true,
+      "link": "vless://e75ad2eb-6c1f-45ce-8023-f5f10875df66@205.237.110.254:443?security=reality&encryption=none&pbk=IG6lxrx_xkGOoBuo3DC8sgQoIFmqVgznIr0qOuNO0w4&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=zsit.eu-cdn294.com&sid=cd2d53510b4df2a8#%40FarazV2ray%20"
     },
     {
-      "name": "RELAY-104.18.9.83-0544",
+      "name": "RELAY-104.18.9.83-0431",
       "flag": "🇨🇦",
       "country": "Canada",
       "protocol": "trojan",
-      "ping": 42,
+      "ping": 49,
       "quality": "Excellent",
       "tls": true,
       "reality": false,
-      "link": "trojan://humanity@www.calmlunch.com:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%8F%81RELAY-104.18.9.83-0544"
+      "link": "trojan://humanity@www.calmlunch.com:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%8F%81RELAY-104.18.9.83-0431"
     },
     {
       "name": "Telegram @Daily_Configs",
       "flag": "🇨🇦",
       "country": "Canada",
       "protocol": "trojan",
-      "ping": 53,
+      "ping": 75,
       "quality": "Excellent",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@www.speedtest.net:443?security=tls&sni=www.calmlunch.com&ech=ip.gs%2Budp%3A%2F%2F8.8.8.8&type=ws&host=www.calmlunch.com&path=%2Fassignment#Telegram%3A%20%40Daily_Configs"
     },
     {
-      "name": "🇯🇵JP-45.32.52.173-0556",
+      "name": "🇯🇵JP-45.32.52.173-0440",
       "flag": "🇯🇵",
       "country": "Japan",
       "protocol": "trojan",
-      "ping": 99,
+      "ping": 98,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "trojan://e26a229d-e8f2-4ff9-8c7d-58a9d83ee437@45.32.52.173:8886?security=tls&sni=45.32.52.173#%F0%9F%87%AF%F0%9F%87%B5JP-45.32.52.173-0556"
+      "link": "trojan://e26a229d-e8f2-4ff9-8c7d-58a9d83ee437@45.32.52.173:8886?security=tls&sni=45.32.52.173#%F0%9F%87%AF%F0%9F%87%B5JP-45.32.52.173-0440"
     },
     {
-      "name": "🇭🇰HK-209.248.32.116-0594",
+      "name": "🇭🇰HK-209.248.32.116-0480",
       "flag": "🇭🇰",
       "country": "Hong Kong",
       "protocol": "trojan",
-      "ping": 142,
+      "ping": 139,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "trojan://i99Cef@209.248.32.116:28101?security=tls#%F0%9F%87%AD%F0%9F%87%B0HK-209.248.32.116-0594"
+      "link": "trojan://i99Cef@209.248.32.116:28101?security=tls#%F0%9F%87%AD%F0%9F%87%B0HK-209.248.32.116-0480"
     },
     {
       "name": "🇨🇳CN中国34",
       "flag": "🇭🇰",
       "country": "Hong Kong",
       "protocol": "vless",
-      "ping": 145,
+      "ping": 142,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5@43.198.53.11:443?encryption=none&security=tls&sni=cfed.tgzdyz2.top&type=ws&host=cfed.tgzdyz2.top&path=tg%40zdyz2#%f0%9f%87%a8%f0%9f%87%b3+CN+%e4%b8%ad%e5%9b%bd+34"
     },
     {
+      "name": "🇨🇦CA-148.113.141.99-1070",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "protocol": "trojan",
+      "ping": 156,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://HdsUZmsHQW@148.113.141.99:443?security=tls#%F0%9F%87%A8%F0%9F%87%A6CA-148.113.141.99-1070"
+    },
+    {
+      "name": "🇸🇬SG-139.180.146.200-0473",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "protocol": "trojan",
+      "ping": 160,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://e26a229d-e8f2-4ff9-8c7d-58a9d83ee437@139.180.146.200:8886?security=tls&sni=139.180.146.200#%F0%9F%87%B8%F0%9F%87%ACSG-139.180.146.200-0473"
+    },
+    {
+      "name": "🇯🇵JP-54.65.177.190-0122",
+      "flag": "🇯🇵",
+      "country": "Japan",
+      "protocol": "trojan",
+      "ping": 219,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@winning-marten.rooster465.autos:443?security=tls&sni=winning-marten.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP-54.65.177.190-0122"
+    },
+    {
       "name": "芬兰V2CROSS.COM",
       "flag": "🇬🇧",
       "country": "United Kingdom",
       "protocol": "vless",
-      "ping": 192,
-      "quality": "Good",
+      "ping": 222,
+      "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "vless://30e52776-55ac-3cb4-8d36-e2910f07e2c3@s1243.sspcccdn.xyz:10829?alpn=h2%2Chttp%2F1.1&flow=xtls-rprx-vision&fp=chrome&security=tls&sni=u695098ueb8953b4s861.gogocs.xyz#%E8%8A%AC%E5%85%B0+V2CROSS.COM"
+      "link": "vless://30e52776-55ac-3cb4-8d36-e2910f07e2c3@s1244.csgfw.top:10829?encryption=none&type=tcp&headerType=&fp=firefox&host=eb8953b4s861.gogocs.xyz&path=&flow=xtls-rprx-vision&security=tls&sni=u695098ueb8953b4s861.gogocs.xyz&serviceName=&mode=&alpn=h2%2Chttp%2F1.1#%E8%8A%AC%E5%85%B0+V2CROSS.COM"
     },
     {
-      "name": "🇸🇬 新加坡 | SGP",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "protocol": "vless",
-      "ping": 198,
-      "quality": "Good",
+      "name": "🇯🇵JP-54.199.66.128-0141",
+      "flag": "🇯🇵",
+      "country": "Japan",
+      "protocol": "trojan",
+      "ping": 224,
+      "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "vless://f57dfd20-fdf4-4967-9599-aca8433ebd5c@ct.877774.xyz:443?&security=tls&fp=random&sni=ap-south.862400.xyz&type=ws&headerType=none&host=ap-south.862400.xyz&path=%2Fannouncement%3Fed%3D2048#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20%7C%20SGP"
+      "link": "trojan://UX82473651@integral-rodent.rooster465.autos:443?security=tls&sni=integral-rodent.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP-54.199.66.128-0141"
     },
     {
       "name": "🇺🇸 美国 | USA",
       "flag": "🇯🇵",
       "country": "Japan",
       "protocol": "vless",
-      "ping": 229,
+      "ping": 224,
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@150.230.63.93:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
+      "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@35.78.243.103:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
+    },
+    {
+      "name": "🇯🇵JP-54.250.237.143-0169",
+      "flag": "🇯🇵",
+      "country": "Japan",
+      "protocol": "trojan",
+      "ping": 225,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@accurate-frog.rooster465.autos:443?security=tls&sni=accurate-frog.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP-54.250.237.143-0169"
     },
     {
       "name": "🇺🇸 美国 | USA",
@@ -287,21 +331,54 @@
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@35.78.243.103:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
+      "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@150.230.63.93:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
     },
     {
-      "name": "🇯🇵JP-54.249.55.154-0262",
-      "flag": "🇯🇵",
-      "country": "Japan",
-      "protocol": "trojan",
-      "ping": 272,
+      "name": "🇸🇬 新加坡 | SGP",
+      "flag": "🇨🇦",
+      "country": "Canada",
+      "protocol": "vless",
+      "ping": 250,
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "trojan://UX82473651@prime-corgi.rooster465.autos:443?security=tls&sni=prime-corgi.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP-54.249.55.154-0262"
+      "link": "vless://f57dfd20-fdf4-4967-9599-aca8433ebd5c@ct.877774.xyz:443?&security=tls&fp=random&sni=ap-south.862400.xyz&type=ws&headerType=none&host=ap-south.862400.xyz&path=%2Fannouncement%3Fed%3D2048#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20%7C%20SGP"
     },
     {
-      "name": "🇰🇷KR-43.201.252.164-0258",
+      "name": "🇰🇷KR-43.201.100.203-0126",
+      "flag": "🇰🇷",
+      "country": "South Korea",
+      "protocol": "trojan",
+      "ping": 279,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@optimum-snapper.rooster465.autos:443?security=tls&sni=optimum-snapper.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-43.201.100.203-0126"
+    },
+    {
+      "name": "🇰🇷KR-3.34.131.153-0173",
+      "flag": "🇰🇷",
+      "country": "South Korea",
+      "protocol": "trojan",
+      "ping": 279,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@pretty-rat.rooster465.autos:443?security=tls&sni=pretty-rat.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.34.131.153-0173"
+    },
+    {
+      "name": "🇰🇷KR-13.125.197.117-0464",
+      "flag": "🇰🇷",
+      "country": "South Korea",
+      "protocol": "trojan",
+      "ping": 279,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@liked-eft.rooster465.autos:443?security=tls&sni=liked-eft.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-13.125.197.117-0464"
+    },
+    {
+      "name": "🇰🇷KR-43.201.252.164-0218",
       "flag": "🇰🇷",
       "country": "South Korea",
       "protocol": "trojan",
@@ -309,10 +386,10 @@
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "trojan://UX82473651@balanced-stag.rooster465.autos:443?security=tls&sni=balanced-stag.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-43.201.252.164-0258"
+      "link": "trojan://UX82473651@balanced-stag.rooster465.autos:443?security=tls&sni=balanced-stag.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-43.201.252.164-0218"
     },
     {
-      "name": "🇰🇷KR-43.203.172.96-0300",
+      "name": "🇰🇷KR-52.78.203.191-0167",
       "flag": "🇰🇷",
       "country": "South Korea",
       "protocol": "trojan",
@@ -320,348 +397,271 @@
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "trojan://UX82473651@neutral-quail.rooster465.autos:443?security=tls&sni=neutral-quail.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-43.203.172.96-0300"
+      "link": "trojan://UX82473651@delicate-buck.rooster465.autos:443?security=tls&sni=delicate-buck.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-52.78.203.191-0167"
     },
     {
-      "name": "🇰🇷KR-54.180.236.195-0576",
+      "name": "🇰🇷KR-43.203.172.96-0172",
       "flag": "🇰🇷",
       "country": "South Korea",
       "protocol": "trojan",
-      "ping": 286,
+      "ping": 281,
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "trojan://UX82473651@evolving-ewe.rooster465.autos:443?security=tls&sni=evolving-ewe.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-54.180.236.195-0576"
+      "link": "trojan://UX82473651@neutral-quail.rooster465.autos:443?security=tls&sni=neutral-quail.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-43.203.172.96-0172"
     },
     {
-      "name": "🇰🇷KR-13.125.197.117-0580",
-      "flag": "🇰🇷",
-      "country": "South Korea",
-      "protocol": "trojan",
-      "ping": 290,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@liked-eft.rooster465.autos:443?security=tls&sni=liked-eft.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-13.125.197.117-0580"
-    },
-    {
-      "name": "🇰🇷KR-43.201.100.203-0259",
-      "flag": "🇰🇷",
-      "country": "South Korea",
-      "protocol": "trojan",
-      "ping": 297,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@optimum-snapper.rooster465.autos:443?security=tls&sni=optimum-snapper.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-43.201.100.203-0259"
-    },
-    {
-      "name": "🇪🇸ES-185.114.72.31-0545",
+      "name": "🇪🇸ES-185.114.72.31-0432",
       "flag": "🇪🇸",
       "country": "Spain",
       "protocol": "trojan",
-      "ping": 310,
+      "ping": 313,
       "quality": "Fair",
       "tls": true,
       "reality": false,
-      "link": "trojan://humanity@185.114.72.31:2053?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%AA%F0%9F%87%B8ES-185.114.72.31-0545"
-    },
-    {
-      "name": "🇯🇵JP-54.250.237.143-0264",
-      "flag": "🇯🇵",
-      "country": "Japan",
-      "protocol": "trojan",
-      "ping": 318,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@accurate-frog.rooster465.autos:443?security=tls&sni=accurate-frog.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP-54.250.237.143-0264"
-    },
-    {
-      "name": "🇯🇵JP-54.249.36.167-0275",
-      "flag": "🇯🇵",
-      "country": "Japan",
-      "protocol": "trojan",
-      "ping": 326,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@comic-poodle.rooster465.autos:443?security=tls&sni=comic-poodle.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP-54.249.36.167-0275"
-    },
-    {
-      "name": "🇸🇬SG-54.254.59.149-0281",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "trojan",
-      "ping": 354,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@desired-boxer.rooster465.autos:443?security=tls&sni=desired-boxer.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-54.254.59.149-0281"
-    },
-    {
-      "name": "🇰🇷KR-3.35.168.225-0257",
-      "flag": "🇰🇷",
-      "country": "South Korea",
-      "protocol": "trojan",
-      "ping": 357,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@noted-cougar.rooster465.autos:443?security=tls&sni=noted-cougar.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.35.168.225-0257"
-    },
-    {
-      "name": "🇺🇸 美国 | USA",
-      "flag": "🇵🇱",
-      "country": "Poland",
-      "protocol": "vless",
-      "ping": 358,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@2.56.172.107:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=%2Ft.me%2FTEAMNETGRATISCOL#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
-    },
-    {
-      "name": "🇺🇸US-31.76.7.45-0535",
-      "flag": "🇨🇿",
-      "country": "Czechia",
-      "protocol": "trojan",
-      "ping": 362,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km@cz-musicc.moritech.net:443?security=tls&type=grpc&serviceName=grpcbeast#%F0%9F%87%BA%F0%9F%87%B8US-31.76.7.45-0535"
-    },
-    {
-      "name": "🇸🇬SG-52.221.218.179-0290",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "trojan",
-      "ping": 402,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@real-cardinal.rooster465.autos:443?security=tls&sni=real-cardinal.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-52.221.218.179-0290"
-    },
-    {
-      "name": "🇭🇰HK-185.244.208.69-0269",
-      "flag": "🇭🇰",
-      "country": "Hong Kong",
-      "protocol": "trojan",
-      "ping": 437,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@strong-haddock.rooster465.autos:443?security=tls&sni=strong-haddock.rooster465.autos#%F0%9F%87%AD%F0%9F%87%B0HK-185.244.208.69-0269"
-    },
-    {
-      "name": "🇸🇬SG-18.143.92.167-0272",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "trojan",
-      "ping": 525,
-      "quality": "Slow",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@glowing-marmoset.rooster465.autos:443?security=tls&sni=glowing-marmoset.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-18.143.92.167-0272"
-    },
-    {
-      "name": "🇸🇬 新加坡 | SGP",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "vless",
-      "ping": 690,
-      "quality": "Slow",
-      "tls": true,
-      "reality": false,
-      "link": "vless://a853e120-3570-462b-aec1-e8f3d4f92d24@asia.csmaster.site:443?&security=tls&fp=chrome&type=ws&headerType=none&host=asia.csmaster.site&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20%7C%20SGP"
-    },
-    {
-      "name": "🇸🇬SG-52.221.220.227-0270",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "trojan",
-      "ping": 1094,
-      "quality": "Slow",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@pet-antelope.rooster465.autos:443?security=tls&sni=pet-antelope.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-52.221.220.227-0270"
-    },
-    {
-      "name": "🇸🇬SG-56.10.9.77-0293",
-      "flag": "🇸🇬",
-      "country": "Singapore",
-      "protocol": "trojan",
-      "ping": 1539,
-      "quality": "Slow",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://UX82473651@inviting-ferret.rooster465.autos:443?security=tls&sni=inviting-ferret.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-56.10.9.77-0293"
+      "link": "trojan://humanity@185.114.72.31:2053?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%AA%F0%9F%87%B8ES-185.114.72.31-0432"
     },
     {
       "name": "🇨🇭 瑞士 | CHE",
       "flag": "🇫🇷",
       "country": "France",
       "protocol": "vless",
-      "ping": 1122,
-      "quality": "Slow",
+      "ping": 330,
+      "quality": "Fair",
       "tls": true,
       "reality": false,
       "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@146.70.233.51:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=%2Ft.me%2FTEAMNETGRATISCOL#%F0%9F%87%A8%F0%9F%87%AD%20%E7%91%9E%E5%A3%AB%20%7C%20CHE"
     },
     {
-      "name": "🇳🇱NL-158.173.20.171-0326",
+      "name": "🇸🇬 新加坡 | SGP",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "protocol": "vless",
+      "ping": 359,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "vless://a853e120-3570-462b-aec1-e8f3d4f92d24@asia.csmaster.site:443?&security=tls&fp=chrome&type=ws&headerType=none&host=asia.csmaster.site&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20%7C%20SGP"
+    },
+    {
+      "name": "🇸🇬SG-56.10.9.77-0133",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "protocol": "trojan",
+      "ping": 360,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@inviting-ferret.rooster465.autos:443?security=tls&sni=inviting-ferret.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-56.10.9.77-0133"
+    },
+    {
+      "name": "🇸🇬SG-54.254.59.149-0477",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "protocol": "trojan",
+      "ping": 360,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@desired-boxer.rooster465.autos:443?security=tls&sni=desired-boxer.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-54.254.59.149-0477"
+    },
+    {
+      "name": "🇸🇬SG-13.212.81.3-0475",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "protocol": "trojan",
+      "ping": 364,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@holy-lamb.rooster465.autos:443?security=tls&sni=holy-lamb.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-13.212.81.3-0475"
+    },
+    {
+      "name": "🇸🇬SG-52.221.220.227-0147",
+      "flag": "🇸🇬",
+      "country": "Singapore",
+      "protocol": "trojan",
+      "ping": 368,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@pet-antelope.rooster465.autos:443?security=tls&sni=pet-antelope.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-52.221.220.227-0147"
+    },
+    {
+      "name": "🇺🇸 美国 | USA",
+      "flag": "🇵🇱",
+      "country": "Poland",
+      "protocol": "vless",
+      "ping": 370,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@2.56.172.107:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=%2Ft.me%2FTEAMNETGRATISCOL#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
+    },
+    {
+      "name": "🇺🇸 美国 | USA",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "protocol": "vless",
+      "ping": 378,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "vless://489f1717-d3c7-4940-ad68-bdbdbab857f4@45.136.199.148:443?&security=tls&fp=chrome&sni=x.m-90.xyz&type=ws&headerType=none&host=x.m-90.xyz&path=t.me%2FTEAMNETGRATISCOL#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20%7C%20USA"
+    },
+    {
+      "name": "🇭🇰HK-185.244.208.69-0137",
+      "flag": "🇭🇰",
+      "country": "Hong Kong",
+      "protocol": "trojan",
+      "ping": 407,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@strong-haddock.rooster465.autos:443?security=tls&sni=strong-haddock.rooster465.autos#%F0%9F%87%AD%F0%9F%87%B0HK-185.244.208.69-0137"
+    },
+    {
+      "name": "🇺🇸US-31.76.7.45-0422",
+      "flag": "🇨🇿",
+      "country": "Czechia",
+      "protocol": "trojan",
+      "ping": 465,
+      "quality": "Fair",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km@cz-musicc.moritech.net:443?security=tls&type=grpc&serviceName=grpcbeast#%F0%9F%87%BA%F0%9F%87%B8US-31.76.7.45-0422"
+    },
+    {
+      "name": "🇬🇧GB-18.168.148.212-2119",
+      "flag": "🇬🇧",
+      "country": "United Kingdom",
+      "protocol": "trojan",
+      "ping": 721,
+      "quality": "Slow",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://Trojan%4082164024@gb.tronsg.com:443?security=tls&sni=gb.tronsg.com#%F0%9F%87%AC%F0%9F%87%A7GB-18.168.148.212-2119"
+    },
+    {
+      "name": "🇳🇱NL-158.173.20.171-4897",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "ss",
-      "ping": 141,
+      "ping": 140,
       "quality": "Good",
       "tls": false,
       "reality": false,
-      "link": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.171:443#%F0%9F%87%B3%F0%9F%87%B1NL-158.173.20.171-0326"
+      "link": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.171:443#%F0%9F%87%B3%F0%9F%87%B1NL-158.173.20.171-4897"
+    },
+    {
+      "name": "🇳🇱NL-109.201.152.181-0074",
+      "flag": "🇳🇱",
+      "country": "Netherlands",
+      "protocol": "ss",
+      "ping": 142,
+      "quality": "Good",
+      "tls": false,
+      "reality": false,
+      "link": "ss://YWVzLTEyOC1jZmI6c2hhZG93c29ja3M=@109.201.152.181:443#%F0%9F%87%B3%F0%9F%87%B1NL-109.201.152.181-0074"
     },
     {
       "name": "8@oneclickvpnkeys",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "ss",
-      "ping": 147,
+      "ping": 143,
       "quality": "Good",
       "tls": false,
       "reality": false,
       "link": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#%E2%9A%99%EF%B8%8F8@oneclickvpnkeys"
     },
     {
-      "name": "🇳🇱NL-109.201.152.181-0198",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
+      "name": "🇳🇴NO-185.213.23.63-0096",
+      "flag": "🇳🇴",
+      "country": "Norway",
       "protocol": "ss",
-      "ping": 152,
+      "ping": 146,
       "quality": "Good",
       "tls": false,
       "reality": false,
-      "link": "ss://YWVzLTEyOC1jZmI6c2hhZG93c29ja3M=@109.201.152.181:443#%F0%9F%87%B3%F0%9F%87%B1NL-109.201.152.181-0198"
+      "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@185.213.23.63:990#%F0%9F%87%B3%F0%9F%87%B4NO-185.213.23.63-0096"
     },
     {
-      "name": "🇫🇮FI-185.103.110.68-0215",
+      "name": "🇫🇮FI-185.103.110.68-0091",
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "ss",
-      "ping": 172,
+      "ping": 158,
       "quality": "Good",
       "tls": false,
       "reality": false,
-      "link": "ss://YWVzLTEyOC1nY206ZjkzMDBhOWJmMzlhZTAzNDdjM2EzYmZiYzRkZDc3NTQ=@185.103.110.68:18283#%F0%9F%87%AB%F0%9F%87%AEFI-185.103.110.68-0215"
+      "link": "ss://YWVzLTEyOC1nY206ZjkzMDBhOWJmMzlhZTAzNDdjM2EzYmZiYzRkZDc3NTQ=@185.103.110.68:18283#%F0%9F%87%AB%F0%9F%87%AEFI-185.103.110.68-0091"
     },
     {
-      "name": "🇨🇭CH-132.243.175.144-0286",
+      "name": "🇨🇭CH-132.243.175.144-0159",
       "flag": "🇨🇭",
       "country": "Switzerland",
       "protocol": "ss",
-      "ping": 172,
+      "ping": 158,
       "quality": "Good",
       "tls": false,
       "reality": false,
-      "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplOEtnUzhmRDB5RHFZRnBnTjRHNXBpQ090OWFGeXFBMw==@132.243.175.144:8388#%F0%9F%87%A8%F0%9F%87%ADCH-132.243.175.144-0286"
+      "link": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplOEtnUzhmRDB5RHFZRnBnTjRHNXBpQ090OWFGeXFBMw==@132.243.175.144:8388#%F0%9F%87%A8%F0%9F%87%ADCH-132.243.175.144-0159"
     },
     {
-      "name": "🇦🇺AU-103.224.212.211-1162",
+      "name": "🇦🇺AU-103.224.212.211-1046",
       "flag": "🇦🇺",
       "country": "Australia",
       "protocol": "vmess",
-      "ping": 125,
+      "ping": 122,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICIzNi43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIzNi43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTE2MiIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
+      "link": "vmess://ewogICAgImFkZCI6ICI1NC43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICI1NC43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTA0NiIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
     },
     {
-      "name": "🇦🇺AU-103.224.212.211-1197",
+      "name": "🇦🇺AU-103.224.212.211-1050",
       "flag": "🇦🇺",
       "country": "Australia",
       "protocol": "vmess",
-      "ping": 132,
+      "ping": 123,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICIyMS43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIyMS43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTE5NyIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
+      "link": "vmess://ewogICAgImFkZCI6ICIyOS43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIyOS43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTA1MCIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
     },
     {
-      "name": "🇭🇰HK-47.76.44.32-0648",
-      "flag": "🇭🇰",
-      "country": "Hong Kong",
-      "protocol": "vmess",
-      "ping": 140,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICI0Ny43Ni40NC4zMiIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogIjkzdWNybjRpMHBmZnVhYmsudi4zZG5zLnZpcCIsCiAgICAiaWQiOiAiZjIzYmI0MjctYzFmOS00MzczLTg3NmMtMmY0M2U5Zjc5MGYzIiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiL3dzLXZtZXNzIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfh63wn4ewSEstNDcuNzYuNDQuMzItMDY0OCIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogZmFsc2UsCiAgICAic25pIjogIjkzdWNybjRpMHBmZnVhYmsudi4zZG5zLnZpcCIKfQ=="
-    },
-    {
-      "name": "🇭🇰HK-8.218.195.61-0644",
-      "flag": "🇭🇰",
-      "country": "Hong Kong",
-      "protocol": "vmess",
-      "ping": 140,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICI4LjIxOC4xOTUuNjEiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJFWDFvR3Q3M056UFFLQWMyLnYuM2Rucy52aXAiLAogICAgImlkIjogImYyM2JiNDI3LWMxZjktNDM3My04NzZjLTJmNDNlOWY3OTBmMyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi93cy12bWVzcyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4et8J+HsEhLLTguMjE4LjE5NS42MS0wNjQ0IiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLAogICAgInNuaSI6ICIiCn0="
-    },
-    {
-      "name": "🇦🇺AU-103.224.212.213-1078",
+      "name": "🇦🇺AU-103.224.212.115-0919",
       "flag": "🇦🇺",
       "country": "Australia",
       "protocol": "vmess",
-      "ping": 142,
+      "ping": 128,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICJybGhyd3RxdXNkLnNpdGUiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJybGhyd3RxdXNkLnNpdGUiLAogICAgImlkIjogIjRmYTM1ZWE0LTY2OGUtNGQ3Yi05YmJjLWI4MzY4MTA2MDYxNyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi9rd2htdndzIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfh6bwn4e6QVUtMTAzLjIyNC4yMTIuMjEzLTEwNzgiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ=="
+      "link": "vmess://ewogICAgImFkZCI6ICJybGhyd3RxdXNkLnNpdGUiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJybGhyd3RxdXNkLnNpdGUiLAogICAgImlkIjogIjRmYTM1ZWE0LTY2OGUtNGQ3Yi05YmJjLWI4MzY4MTA2MDYxNyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi9rd2htdndzIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfh6bwn4e6QVUtMTAzLjIyNC4yMTIuMTE1LTA5MTkiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ=="
     },
     {
-      "name": "🇨🇦CA-23.162.200.227-0292",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "protocol": "vmess",
-      "ping": 143,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICIyMy4xNjIuMjAwLjIyNyIsCiAgICAiYWlkIjogMCwKICAgICJob3N0IjogInZrLmNvbSIsCiAgICAiaWQiOiAiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiLyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4eo8J+HpkNBLTIzLjE2Mi4yMDAuMjI3LTAyOTIiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ=="
-    },
-    {
-      "name": "🇭🇰HK-47.83.207.148-0946",
-      "flag": "🇭🇰",
-      "country": "Hong Kong",
-      "protocol": "vmess",
-      "ping": 144,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICI0Ny44My4yMDcuMTQ4IiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAiVkFINFVSZFpMM2pEWDVyMi52LjNkbnMudmlwIiwKICAgICJpZCI6ICJmMjNiYjQyNy1jMWY5LTQzNzMtODc2Yy0yZjQzZTlmNzkwZjMiLAogICAgIm5ldCI6ICJ3cyIsCiAgICAicGF0aCI6ICIvIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfh63wn4ewSEstNDcuODMuMjA3LjE0OC0wOTQ2IiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLAogICAgInNuaSI6ICIiCn0="
-    },
-    {
-      "name": "🇨🇦CA-158.51.121.63-0335",
-      "flag": "🇨🇦",
-      "country": "Canada",
-      "protocol": "vmess",
-      "ping": 150,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICIxNTguNTEuMTIxLjYzIiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAic2VyaWJ1cy5vcmciLAogICAgImlkIjogIjAzZmNjNjE4LWI5M2QtNjc5Ni02YWVkLThhMzhjOTc1ZDU4MSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HqPCfh6ZDQS0xNTguNTEuMTIxLjYzLTAzMzUiLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ=="
-    },
-    {
-      "name": "🇦🇺AU-103.224.212.211-1153",
+      "name": "🇦🇺AU-103.224.212.211-1024",
       "flag": "🇦🇺",
       "country": "Australia",
       "protocol": "vmess",
-      "ping": 153,
+      "ping": 130,
       "quality": "Good",
       "tls": true,
       "reality": false,
-      "link": "vmess://ewogICAgImFkZCI6ICIzNC43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIzNC43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTE1MyIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
+      "link": "vmess://ewogICAgImFkZCI6ICIzNi43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIzNi43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTAyNCIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
+    },
+    {
+      "name": "🇦🇺AU-103.224.212.211-1007",
+      "flag": "🇦🇺",
+      "country": "Australia",
+      "protocol": "vmess",
+      "ping": 136,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "vmess://ewogICAgImFkZCI6ICIzNC43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIzNC43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTAwNyIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
     }
   ]
 }
