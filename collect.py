@@ -624,7 +624,7 @@ def rank_and_filter(servers: list[dict]) -> list[dict]:
 #  إعادة التحقق من أعلى السيرفرات (ضمان عدم وجود ميتين في الأوائل)
 # ══════════════════════════════════════════════════════════════
 
-RE_VERIFY_TOP    = 15   # عدد السيرفرات الأعلى اللي نعيد اختبارها
+RE_VERIFY_TOP    = 10   # عدد السيرفرات الأعلى اللي نعيد اختبارها
 RE_VERIFY_ROUNDS = 2    # كم مرة نحاول لكل سيرفر قبل نحكم عليه بالموت
 
 async def _re_test_server(s: dict) -> bool:
@@ -643,32 +643,36 @@ async def _re_test_server(s: dict) -> bool:
 
 async def re_verify_top(servers: list[dict]) -> list[dict]:
     """
-    يعيد اختبار أعلى RE_VERIFY_TOP سيرفر.
-    أي سيرفر يفشل → يُحذف من القائمة ويُستبدل بالتالي.
-    يضمن إن أول 5 سيرفرات على الأقل أحياء وشغالين.
+    يضمن إن أول RE_VERIFY_TOP سيرفر كلها حية وتتصل.
+    أي سيرفر ميت يُحذف ويُستبدل بسيرفر حي من الباقي،
+    حتى نضمن إن المستخدم يشوف أول 10 سيرفرات كلها شغالة.
     """
     if not servers:
         return servers
 
-    top     = servers[:RE_VERIFY_TOP]
-    rest    = servers[RE_VERIFY_TOP:]
+    print(f"\n🔁 ضمان أول {RE_VERIFY_TOP} سيرفرات كلها حية...")
 
-    print(f"\n🔁 إعادة التحقق من أعلى {len(top)} سيرفر...")
+    confirmed_alive: list[dict] = []   # سيرفرات مؤكد حياتها
+    candidates      = list(servers)    # نسخة نشتغل عليها
+    tested_indices  = set()
 
-    tasks   = [_re_test_server(s) for s in top]
-    results = await asyncio.gather(*tasks)
+    idx = 0
+    while len(confirmed_alive) < RE_VERIFY_TOP and idx < len(candidates):
+        s = candidates[idx]
+        tested_indices.add(idx)
+        ok = await _re_test_server(s)
+        if ok:
+            confirmed_alive.append(s)
+            print(f"  ✅ [{len(confirmed_alive)}/{RE_VERIFY_TOP}] حي: {s.get('host','?')} ({s.get('ping',0)}ms)")
+        else:
+            print(f"  ❌ ميت → استبدال: {s.get('host','?')}")
+        idx += 1
 
-    alive   = [s for s, ok in zip(top, results) if ok]
-    dead    = [s for s, ok in zip(top, results) if not ok]
+    # باقي السيرفرات اللي ما اختبرناها (تُضاف بعد الـ 10 المضمونين)
+    rest = [s for i, s in enumerate(candidates) if i >= idx]
 
-    if dead:
-        print(f"  ⚠  {len(dead)} سيرفر ميت حُذف من الأوائل: "
-              + ", ".join(s.get("host","?") for s in dead))
-    else:
-        print(f"  ✅ كل أعلى {len(top)} سيرفر أحياء وجاهزين")
-
-    # أكمل بالباقي إذا احتجنا
-    final = alive + rest
+    final = confirmed_alive + rest
+    print(f"\n  ✅ أول {len(confirmed_alive)} سيرفر مضمونين حياء وشغالين")
     return final[:MAX_SERVERS]
 
 
