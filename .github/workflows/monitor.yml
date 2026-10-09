@@ -37,9 +37,12 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add servers.json
           if git diff --cached --quiet; then
-            echo "كل السيرفرات أحياء - لا تغيير"
+            echo "no changes"
           else
+            git stash
             git pull --rebase origin main
+            git stash pop
+            git add servers.json
             git commit -m "monitor: replace dead servers $(date -u +'%H:%M UTC')"
             git push
           fi
