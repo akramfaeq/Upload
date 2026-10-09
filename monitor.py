@@ -372,19 +372,29 @@ async def find_replacement(
 ) -> list[dict]:
     """
     يبحث عن `needed` سيرفرات بديلة حية وحقيقية.
-    يختبرها بالتوازي ويتوقف بمجرد ما يجمع العدد المطلوب.
+    يفضّل vless/trojan على ss، ويتوقف فوراً بمجرد ما يجمع العدد المطلوب.
     """
     candidates = await fetch_candidates(session, existing_links, needed)
     if not candidates:
         print("  ⚠ لا يوجد candidates جديدة")
         return []
 
+    # نرتب الـ candidates: vless وtrojan أولاً، بعدين vmess، وss في الأخير
+    PROTO_PRIORITY = {"vless": 0, "trojan": 0, "vmess": 1, "ss": 2}
+    def _priority(link: str) -> int:
+        for p, score in PROTO_PRIORITY.items():
+            if link.startswith(p + "://"):
+                return score
+        return 3
+    candidates.sort(key=_priority)
+
     print(f"  ⚡ اختبار البدائل (نحتاج {needed} حي)...")
 
     semaphore  = asyncio.Semaphore(MAX_CONCURRENCY)
-    found:   list[dict] = []
-    tested   = 0
-    stop_evt = asyncio.Event()
+    found:     list[dict] = []
+    tested     = 0
+    stop_evt   = asyncio.Event()
+    found_lock = asyncio.Lock()
 
     async def _test_one(link: str):
         nonlocal tested
@@ -394,7 +404,7 @@ async def find_replacement(
             if stop_evt.is_set():
                 return
             info = _parse_link_info(link)
-            if not info or not info.get("host") or _is_cdn_ip(info.get("host","")):
+            if not info or not info.get("host") or _is_cdn_ip(info.get("host", "")):
                 tested += 1
                 return
 
@@ -405,6 +415,9 @@ async def find_replacement(
             ms1 = await _tcp_connect(host, port)
             if ms1 is None or ms1 < MIN_PING_VALID or ms1 > MAX_PING:
                 tested += 1
+                return
+
+            if stop_evt.is_set():
                 return
 
             await asyncio.sleep(0.3)
@@ -418,24 +431,26 @@ async def find_replacement(
             if not real:
                 return
 
-            ping = int(min(ms1, ms2))
-            found.append({
-                "name":     _clean_name(info.get("name") or f"{protocol.upper()} Server"),
-                "flag":     "🌐",
-                "country":  "Unknown",
-                "protocol": protocol,
-                "host":     host,
-                "port":     port,
-                "ping":     ping,
-                "quality":  _ping_to_quality(ping),
-                "tls":      info.get("tls", False),
-                "reality":  info.get("reality", False),
-                "link":     link,
-            })
-            print(f"    ✅ بديل #{len(found)}: {host} | {protocol} | {ping}ms")
-
-            if len(found) >= needed:
-                stop_evt.set()
+            async with found_lock:
+                if stop_evt.is_set():
+                    return
+                ping = int(min(ms1, ms2))
+                found.append({
+                    "name":     _clean_name(info.get("name") or f"{protocol.upper()} Server"),
+                    "flag":     "🌐",
+                    "country":  "Unknown",
+                    "protocol": protocol,
+                    "host":     host,
+                    "port":     port,
+                    "ping":     ping,
+                    "quality":  _ping_to_quality(ping),
+                    "tls":      info.get("tls", False),
+                    "reality":  info.get("reality", False),
+                    "link":     link,
+                })
+                print(f"    ✅ بديل #{len(found)}: {host} | {protocol} | {ping}ms")
+                if len(found) >= needed:
+                    stop_evt.set()
 
     tasks = [_test_one(link) for link in candidates]
     await asyncio.gather(*tasks)
