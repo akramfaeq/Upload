@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-09T04:11:49.340935+00:00",
+  "updated_at": "2026-10-09T10:31:20.327091+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 163,
+      "ping": 178,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -19,7 +19,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 136,
+      "ping": 95,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -30,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 130,
+      "ping": 94,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -41,7 +41,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 149,
+      "ping": 121,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -52,7 +52,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 203,
+      "ping": 133,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -63,7 +63,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 137,
+      "ping": 108,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -74,7 +74,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 221,
+      "ping": 204,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -85,33 +85,35 @@
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 154,
+      "ping": 287,
       "quality": "Slow",
       "tls": true,
       "reality": true,
       "link": "vless://56de13ac-086e-4789-8e1e-1bf2bd90216b@swidenlanzerotte.live:443?security=reality&encryption=none&pbk=MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM&headerType=&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=swidenlanzerotte.live#%E7%BE%8E%E5%9B%BD+Xerox"
     },
     {
-      "name": "🇱🇺LU卢森堡1",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 17,
-      "quality": "Excellent",
-      "tls": true,
-      "reality": false,
-      "link": "vless://f775978b-6e22-41a8-ae5e-5f9779e6745f@188.42.145.90:8443?encryption=none&security=tls&sni=juzibaipiao.5112233.xyz&type=ws&host=juzibaipiao.5112233.xyz&path=%2f%3fed%3d2048#%f0%9f%87%b1%f0%9f%87%ba+LU+%e5%8d%a2%e6%a3%ae%e5%a0%a1+1"
-    },
-    {
       "name": "🇳🇱NL-45.87.41.18-0430",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 124,
+      "ping": 95,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0430"
+    },
+    {
+      "name": "🇨🇦CA-137.184.174.93-0042",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "ss",
+      "host": "137.184.174.93",
+      "port": 8080,
+      "ping": 25,
+      "quality": "Excellent",
+      "tls": false,
+      "reality": false,
+      "link": "ss://cmM0LW1kNToxNGZGUHJiZXpFM0hEWnpzTU9yNg==@137.184.174.93:8080#%F0%9F%87%A8%F0%9F%87%A6CA-137.184.174.93-0042"
     },
     {
       "name": "🇩🇪DE-185.220.100.168-0434",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#%E2%9A%99%EF%B8%8F8@oneclickvpnkeys"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-09T10:31:20.327106+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
