@@ -1,0 +1,66 @@
+name: Monitor VPN Servers
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # كل 5 دقائق
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install aiohttp
+
+      - name: Run monitor
+        run: python monitor.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add servers.json
+
+          if git diff --cached --quiet; then
+            echo "✅ لا تغيير — كل السيرفرات أحياء"
+          else
+            # جلب آخر تغييرات قبل الـ push لتجنب التعارض
+            git pull --rebase origin main
+
+            # احسب الإحصائيات من الملف الجديد
+            ALIVE=$(python3 -c "
+import json, sys
+try:
+    d = json.load(open('servers.json'))
+    srvs = d.get('servers', [])
+    total = len(srvs)
+    # أول 10 هم المضمونين
+    print(f'{min(10,total)}/{total}')
+except: print('?/?')
+")
+            git commit -m "🔄 monitor: ${ALIVE} alive | $(date -u +'%H:%M UTC')"
+            git push
+          fi
+
+      # ── إشعار لو كل السيرفرات ماتت (اختياري — يحتاج SLACK_WEBHOOK في Secrets)
+      - name: Alert if all servers dead
+        if: failure()
+        run: |
+          echo "⚠️ Monitor run failed or all servers are dead!"
+          # يمكن إضافة webhook هنا
