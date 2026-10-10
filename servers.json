@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-10T03:57:36.881678+00:00",
+  "updated_at": "2026-10-10T07:04:25.234952+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 83,
+      "ping": 143,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,29 +19,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 92,
+      "ping": 154,
       "quality": "Good",
       "tls": true,
       "reality": true,
       "link": "vless://f55e9aba-7b14-4f6f-b59a-d5b3d45c9309@193.233.74.6:8444?&security=reality&pbk=FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0&sid=457fab2ac885dbe0&fp=chrome&sni=github.com&type=grpc&serviceName=&mode=gun#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU"
     },
     {
-      "name": "🇩🇪 德国 | DEU",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "vless",
-      "ping": 91,
-      "quality": "Good",
-      "tls": true,
-      "reality": true,
-      "link": "vless://318c935d-c195-41d3-99ad-9bbcfdab3386@177.1.187.251:443?&security=reality&flow=xtls-rprx-vision&pbk=0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08&sid=4be4110078ebed4a&fp=randomized&sni=de2.srv.vbuste.ru&type=tcp&headerType=none&host=de2.srv.vbuste.ru&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU"
-    },
-    {
       "name": "🇳🇱 荷兰 | NLD",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 98,
+      "ping": 195,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -52,7 +41,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 127,
+      "ping": 175,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -63,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 95,
+      "ping": 151,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -74,7 +63,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 105,
+      "ping": 155,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -85,7 +74,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 104,
+      "ping": 165,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -96,7 +85,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 81,
+      "ping": 151,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -107,11 +96,24 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 88,
+      "ping": 143,
       "quality": "Slow",
       "tls": true,
       "reality": true,
       "link": "vless://df53b6c2-8005-475c-9eb9-74e1be785dc8@157.228.160.166:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M&security=reality&sid=3cef317b&sni=addons.mozilla.org&type=tcp#%E8%8B%B1%E5%9B%BD+%E6%A1%91%E5%BE%B7%E5%85%B0%E5%A4%A7%E5%AD%A6"
+    },
+    {
+      "name": "🇺🇸US-16.144.66.136-0540",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "alert-titmouse.rooster465.autos",
+      "port": 443,
+      "ping": 22,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@alert-titmouse.rooster465.autos:443?security=tls&sni=alert-titmouse.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8US-16.144.66.136-0540"
     },
     {
       "name": "🇳🇱NL-45.87.41.18-0465",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vmess://ewogICAgImFkZCI6ICI0Ny4yNDMuNjUuMjQzIiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAibGN2OHY5bDdveWFteHhmei52LjNkbnMudmlwIiwKICAgICJpZCI6ICJmMjNiYjQyNy1jMWY5LTQzNzMtODc2Yy0yZjQzZTlmNzkwZjMiLAogICAgIm5ldCI6ICJ3cyIsCiAgICAicGF0aCI6ICIvIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfh63wn4ewSEstNDcuMjQzLjY1LjI0My0wMTQ4IiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiBmYWxzZSwKICAgICJzbmkiOiAibGN2OHY5bDdveWFteHhmei52LjNkbnMudmlwIgp9"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-10T07:04:25.234971+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
