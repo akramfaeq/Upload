@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-10T21:03:22.636214+00:00",
+  "updated_at": "2026-10-11T00:06:07.268904+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 111,
+      "ping": 101,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,7 +19,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 127,
+      "ping": 124,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -30,7 +30,7 @@
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 159,
+      "ping": 137,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -41,7 +41,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 110,
+      "ping": 97,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -52,29 +52,18 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 142,
+      "ping": 121,
       "quality": "Slow",
       "tls": true,
       "reality": true,
       "link": "vless://df53b6c2-8005-475c-9eb9-74e1be785dc8@157.228.128.59:443?security=reality&encryption=none&pbk=QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws&host=/?telegram--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=addons.mozilla.org&sid=06e00e7c#%E8%8B%B1%E5%9B%BD+%E6%A1%91%E5%BE%B7%E5%85%B0%E5%A4%A7%E5%AD%A6"
     },
     {
-      "name": "🇦🇹AT-212.183.88.136-0472",
-      "flag": "🇦🇹",
-      "country": "Austria",
-      "protocol": "trojan",
-      "ping": 12,
-      "quality": "Excellent",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://humanity@212.183.88.136:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#%F0%9F%87%A6%F0%9F%87%B9AT-212.183.88.136-0472"
-    },
-    {
       "name": "🇳🇱NL-45.87.41.18-0465",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 107,
+      "ping": 97,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 124,
+      "ping": 118,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 124,
+      "ping": 105,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 138,
+      "ping": 130,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.255.179.166-0462"
+    },
+    {
+      "name": "🇺🇸US-16.144.66.136-0540",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "alert-titmouse.rooster465.autos",
+      "port": 443,
+      "ping": 74,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@alert-titmouse.rooster465.autos:443?security=tls&sni=alert-titmouse.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8US-16.144.66.136-0540"
     },
     {
       "name": "🇩🇪DE-3.74.47.221-2711",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "ss://YWVzLTEyOC1nY206ZjkzMDBhOWJmMzlhZTAzNDdjM2EzYmZiYzRkZDc3NTQ=@185.103.110.68:18283#%F0%9F%87%AB%F0%9F%87%AEFI-185.103.110.68-0237"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-11T00:06:07.268922+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
