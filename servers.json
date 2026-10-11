@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-11T03:31:48.248763+00:00",
+  "updated_at": "2026-10-11T05:36:17.112850+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 96,
+      "ping": 93,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,29 +19,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 103,
+      "ping": 92,
       "quality": "Fair",
       "tls": true,
       "reality": true,
       "link": "vless://0a322246-8c1a-47cd-9865-cccebbb2e5c1@31.76.64.248:443?encryption=none&security=reality&type=tcp&sni=blog.api.www.cloudflare.com&flow=xtls-rprx-vision&fp=firefox&pbk=9OV_GN4lgwY_4llPfYCGev-PPXLMj-hfYnveKF4tjws&sid=f8#United+Kingdom"
     },
     {
-      "name": "🇬🇧telegram@v2rayNG_Matsuri",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "protocol": "vless",
-      "ping": 127,
-      "quality": "Fair",
-      "tls": true,
-      "reality": true,
-      "link": "vless://8df2e661-6f46-471b-9133-7fc13a0daa35@65.108.3.59:443?security=reality&encryption=none&pbk=jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=web.eitaa.com&sid=90ec9bba2019#%F0%9F%87%AC%F0%9F%87%A7telegram%E2%9E%A0%40v2rayNG_Matsuri"
-    },
-    {
       "name": "英国V2CROSS.COM",
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 114,
+      "ping": 110,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -52,7 +41,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 159,
+      "ping": 152,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -63,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 93,
+      "ping": 98,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +63,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 99,
+      "ping": 90,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 107,
+      "ping": 96,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 131,
+      "ping": 118,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 98,
+      "ping": 89,
       "quality": "Fair",
       "tls": true,
       "reality": false,
       "link": "vless://e6df2095-a73c-4043-8693-8d5a03686870@107.189.26.160:443?&security=tls&fp=chrome&alpn=http%2F1.1&sni=lucasjow.us.ci&type=ws&headerType=none&host=lucasjow.us.ci&path=%2Fcart%2Fdocs%2Fwww%2Fproxyip%3D108.160.132.132#%F0%9F%87%B3%F0%9F%87%B1%20%E8%8D%B7%E5%85%B0%20%7C%20NLD"
+    },
+    {
+      "name": "🇮🇪IE-54.72.130.222-0475",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "adapting-basilisk.rooster465.autos",
+      "port": 443,
+      "ping": 74,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@adapting-basilisk.rooster465.autos:443?security=tls&sni=adapting-basilisk.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AAIE-54.72.130.222-0475"
     },
     {
       "name": "🇳🇱@FreakConfig",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "ss://YWVzLTEyOC1nY206ZjkzMDBhOWJmMzlhZTAzNDdjM2EzYmZiYzRkZDc3NTQ=@185.103.110.68:18283#%F0%9F%87%AB%F0%9F%87%AEFI-185.103.110.68-0237"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-11T05:36:17.112867+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
