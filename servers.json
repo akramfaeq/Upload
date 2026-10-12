@@ -1,25 +1,14 @@
 {
   "version": 5,
-  "updated_at": "2026-10-12T03:55:55.895583+00:00",
+  "updated_at": "2026-10-12T10:27:15.098297+00:00",
   "count": 60,
   "servers": [
-    {
-      "name": "伊朗V2CROSS.COM",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 97,
-      "quality": "Fair",
-      "tls": true,
-      "reality": true,
-      "link": "vless://f8d52ece-fad4-478d-875d-df6eed3befa7@sw.golangwikito.cfd:443?security=reality&type=tcp&packetEncoding=xudp&sni=sw.golangwikito.cfd&fp=chrome&flow=xtls-rprx-vision&sid=a1037b25dcef6aa7&pbk=Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg&encryption=none#%E4%BC%8A%E6%9C%97+V2CROSS.COM"
-    },
     {
       "name": "🇩🇪 德国 | DEU",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 89,
+      "ping": 107,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -30,7 +19,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 92,
+      "ping": 118,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -41,7 +30,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 113,
+      "ping": 127,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -52,7 +41,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 90,
+      "ping": 102,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -63,7 +52,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 112,
+      "ping": 139,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -74,7 +63,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 82,
+      "ping": 98,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 85,
+      "ping": 97,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 85,
+      "ping": 101,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 85,
+      "ping": 102,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://b18d5990-96eb-4587-a386-7f8ef7591e6a@2.26.231.218:2063?sni=rusbid.de&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%B5%F0%9F%87%B1%20%E6%B3%A2%E5%85%B0%20%7C%20POL%20%232"
+    },
+    {
+      "name": "🇮🇪IE-3.253.106.233-0240",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "3.253.106.233",
+      "port": 443,
+      "ping": 82,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@3.253.106.233:443?security=tls&sni=loved-shark.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AAIE-3.253.106.233-0240"
     },
     {
       "name": "🇩🇪 德国 | DEU 6",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vless://084cbecb-54d3-4da0-8c06-61758a147c47@www.visa.com.hk:443?sni=nl-ams.862400.xyz&type=ws&host=nl-ams.862400.xyz&path=/announcement?ed=2048fp=random&security=tls#%F0%9F%87%B3%F0%9F%87%B1%20%E8%8D%B7%E5%85%B0%20%7C%20NLD%20%233"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-12T10:27:15.098313+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
