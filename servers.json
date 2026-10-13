@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-13T13:24:04.956470+00:00",
+  "updated_at": "2026-10-13T16:09:00.074368+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 155,
+      "ping": 159,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,29 +19,18 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 144,
+      "ping": 114,
       "quality": "Fair",
       "tls": true,
       "reality": true,
       "link": "vless://92295a0d-b610-4075-85e9-bfab09ec6f3a@138.124.98.219:443?security=reality&encryption=none&pbk=IyUvo6owCe4Zfr8aIVdtweSNHQSpSyiO-OKsRDJ9BBs&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=www.ah.nl&sid=a111111111111111#%E6%8C%AA%E5%A8%81+V2CROSS.COM"
     },
     {
-      "name": "巴西V2CROSS.COM",
-      "flag": "🇸🇪",
-      "country": "Sweden",
-      "protocol": "vless",
-      "ping": 190,
-      "quality": "Slow",
-      "tls": true,
-      "reality": true,
-      "link": "vless://8bd04756-3beb-4348-82c9-d35453df50ce@sweedenqfds777.qcloud.surf:21221?security=reality&encryption=none&pbk=RtxGqCtQJeOyUwSe7k6oZOrQWV1hPbC-TMqqgxl9fn4&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=metrika.yandex.ru&sid=c430045c#%E5%B7%B4%E8%A5%BF+V2CROSS.COM"
-    },
-    {
       "name": "🇳🇱NL-45.87.41.18-0466",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 141,
+      "ping": 110,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -52,7 +41,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 153,
+      "ping": 120,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -63,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 187,
+      "ping": 153,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +63,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 152,
+      "ping": 276,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 160,
+      "ping": 140,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 153,
+      "ping": 218,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 177,
+      "ping": 315,
       "quality": "Fair",
       "tls": true,
       "reality": false,
       "link": "trojan://UX82473651@meet-goshawk.rooster465.autos:443?security=tls&sni=meet-goshawk.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AADE-3.75.93.113-0244"
+    },
+    {
+      "name": "🇮🇪IE-34.242.77.118-0473",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "34.242.77.118",
+      "port": 443,
+      "ping": 99,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@34.242.77.118:443?security=tls&sni=sacred-anemone.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AAIE-34.242.77.118-0473"
     },
     {
       "name": "🇷🇺 俄罗斯 | RUS",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vmess://ewogICAgImFkZCI6ICJvcGxnMS5jZmNkbjIueHl6IiwKICAgICJhaWQiOiAwLAogICAgImhvc3QiOiAib3BsZzEuY2ZjZG4yLnh5eiIsCiAgICAiaWQiOiAiYzVhMmQ3YjgtYmY4NC00Zjk3LTg1NzctYjliODdmMmJhYWY3IiwKICAgICJuZXQiOiAid3MiLAogICAgInBhdGgiOiAiL0FVSUtOOEFVIiwKICAgICJwb3J0IjogNDQzLAogICAgInBzIjogIvCfh6bwn4e6QVUtMTAzLjIyNC4yMTIuMjEwLTExOTciLAogICAgInRscyI6ICJ0bHMiLAogICAgInR5cGUiOiAiYXV0byIsCiAgICAic2VjdXJpdHkiOiAiYXV0byIsCiAgICAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsCiAgICAic25pIjogIiIKfQ=="
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-13T16:09:00.074387+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
