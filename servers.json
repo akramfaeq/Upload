@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-14T21:14:55.732014+00:00",
+  "updated_at": "2026-10-14T21:58:19.015176+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 136,
+      "ping": 146,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,7 +19,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 147,
+      "ping": 157,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -30,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 131,
+      "ping": 146,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -59,22 +59,11 @@
       "link": "vless://ef8c7169-87fc-49ad-be91-1f3984ab446d@mog.keyblack.site:8444?&security=reality&flow=xtls-rprx-vision&pbk=DQGwrxOgoiyBDrbdFUofP88FGtxHDA2duzNXKkyxaig&sid=6ba85179e30d4fc2&fp=firefox&sni=www.cloudflare.com&type=tcp&headerType=none&host=www.cloudflare.com&path=%2F#%F0%9F%87%B3%F0%9F%87%B1%20%E8%8D%B7%E5%85%B0%20%7C%20NLD"
     },
     {
-      "name": "🇳🇱 荷兰 | NLD",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 172,
-      "quality": "Fair",
-      "tls": true,
-      "reality": true,
-      "link": "vless://6338c01a-310e-42c3-bf4f-2a20e161054b@nl1.aiage.work:443?&security=reality&flow=xtls-rprx-vision&pbk=vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk&sid=adcbde41b1cf27ba&fp=firefox&sni=nl1.aiage.work&type=tcp&headerType=none&host=nl1.aiage.work&path=%2F#%F0%9F%87%B3%F0%9F%87%B1%20%E8%8D%B7%E5%85%B0%20%7C%20NLD"
-    },
-    {
       "name": "巴西V2CROSS.COM",
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 154,
+      "ping": 162,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -85,7 +74,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 155,
+      "ping": 158,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -96,7 +85,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 131,
+      "ping": 141,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 135,
+      "ping": 152,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@185.220.100.168:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.220.100.168-0451"
+    },
+    {
+      "name": "🇯🇵JP-13.230.139.12-0181",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "brief-glider.rooster465.autos",
+      "port": 443,
+      "ping": 112,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@brief-glider.rooster465.autos:443?security=tls&sni=brief-glider.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5JP-13.230.139.12-0181"
     },
     {
       "name": "🇩🇪DE-179.254.115.148-0544",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vmess://ewogICAgImFkZCI6ICIzNi43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIzNi43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTEwMyIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-14T21:58:19.015192+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
