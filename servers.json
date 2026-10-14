@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-14T11:02:59.947195+00:00",
+  "updated_at": "2026-10-14T14:43:38.569717+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 121,
+      "ping": 92,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -16,21 +16,10 @@
     },
     {
       "name": "🇩🇪 德国 | DEU",
-      "flag": "🇫🇮",
-      "country": "Finland",
-      "protocol": "vless",
-      "ping": 150,
-      "quality": "Good",
-      "tls": true,
-      "reality": true,
-      "link": "vless://f55e9aba-7b14-4f6f-b59a-d5b3d45c9309@109.172.54.135:8444?&security=reality&pbk=FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0&fp=chrome&sni=github.com&type=grpc&serviceName=&mode=gun#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU"
-    },
-    {
-      "name": "🇩🇪 德国 | DEU",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 127,
+      "ping": 302,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -41,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 123,
+      "ping": 89,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -52,7 +41,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 130,
+      "ping": 105,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -63,7 +52,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 151,
+      "ping": 126,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -74,7 +63,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 132,
+      "ping": 96,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -85,7 +74,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 106,
+      "ping": 88,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 137,
+      "ping": 115,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 112,
+      "ping": 89,
       "quality": "Fair",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@144.31.205.106:443?security=tls&sni=www.volumeroot.com&type=ws&path=/assignment&Host=www.volumeroot.com#%F0%9F%87%A9%F0%9F%87%AADE-144.31.205.106-0510"
+    },
+    {
+      "name": "🇮🇪IE-3.253.106.233-0191",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "3.253.106.233",
+      "port": 443,
+      "ping": 69,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@3.253.106.233:443?security=tls&sni=loved-shark.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AAIE-3.253.106.233-0191"
     },
     {
       "name": "🇱🇰 LK_75",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vmess://ewogICAgImFkZCI6ICI4LjIxOC4xOTUuNjEiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJFWDFvR3Q3M056UFFLQWMyLnYuM2Rucy52aXAiLAogICAgImlkIjogImYyM2JiNDI3LWMxZjktNDM3My04NzZjLTJmNDNlOWY3OTBmMyIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi93cy12bWVzcyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4et8J+HsEhLLTguMjE4LjE5NS42MS0yMTYzIiwKICAgICJ0bHMiOiAidGxzIiwKICAgICJ0eXBlIjogImF1dG8iLAogICAgInNlY3VyaXR5IjogImF1dG8iLAogICAgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLAogICAgInNuaSI6ICIiCn0="
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-14T14:43:38.569733+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
