@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-13T22:14:03.062142+00:00",
+  "updated_at": "2026-10-14T00:16:56.145562+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 127,
+      "ping": 120,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,29 +19,18 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 120,
+      "ping": 101,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0464"
     },
     {
-      "name": "🇱🇺LU卢森堡1",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 140,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vless://f775978b-6e22-41a8-ae5e-5f9779e6745f@188.42.145.90:8443?encryption=none&security=tls&sni=juzibaipiao.5112233.xyz&type=ws&host=juzibaipiao.5112233.xyz&path=%2f%3fed%3d2048#%f0%9f%87%b1%f0%9f%87%ba+LU+%e5%8d%a2%e6%a3%ae%e5%a0%a1+1"
-    },
-    {
       "name": "🇩🇪DE-185.255.179.166-0462",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 162,
+      "ping": 150,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -52,7 +41,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 129,
+      "ping": 120,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -63,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 130,
+      "ping": 136,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -74,7 +63,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "trojan",
-      "ping": 144,
+      "ping": 136,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 120,
+      "ping": 109,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 158,
+      "ping": 160,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 138,
+      "ping": 127,
       "quality": "Fair",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@193.23.202.65:443?security=tls#%F0%9F%87%BA%F0%9F%87%B8US-193.23.202.65-0507"
+    },
+    {
+      "name": "🇺🇸US-16.144.66.136-0210",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "alert-titmouse.rooster465.autos",
+      "port": 443,
+      "ping": 60,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@alert-titmouse.rooster465.autos:443?security=tls&sni=alert-titmouse.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8US-16.144.66.136-0210"
     },
     {
       "name": "🇩🇪DE-63.178.198.94-0240",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vmess://ewogICAgImFkZCI6ICIyNS43MmltZy54eXoiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICIyNS43MmltZy54eXoiLAogICAgImlkIjogIjgxZDkzZjYyLTE1YTItNDk5NC1hZGI5LTBiNWQ5MDZhYWM3ZSIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi8iLAogICAgInBvcnQiOiA0NDMsCiAgICAicHMiOiAi8J+HpvCfh7pBVS0xMDMuMjI0LjIxMi4yMTEtMTA3NSIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwKICAgICJzbmkiOiAiIgp9"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-14T00:16:56.145575+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
