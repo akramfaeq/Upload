@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-15T10:46:41.520415+00:00",
+  "updated_at": "2026-10-15T14:16:50.516283+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 123,
+      "ping": 90,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,7 +19,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 151,
+      "ping": 190,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -30,40 +30,18 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 119,
+      "ping": 89,
       "quality": "Slow",
       "tls": true,
       "reality": true,
       "link": "vless://6c713691-3ca2-0009-ad25-113d1bed6b03@140.225.199.210:443?security=reality&encryption=none&pbk=JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E&host=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=hatch.senko.ru&sid=b8c6965f3596688a#%E7%BE%8E%E5%9B%BD+%E5%9C%A3%E5%87%AF%E7%91%9F%E7%90%B3%E5%A5%B3%E5%AD%90%E5%A4%A7%E5%AD%A6"
     },
     {
-      "name": "🇮🇷  @Premium_Config_1  |  Join",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "vless",
-      "ping": 18,
-      "quality": "Excellent",
-      "tls": true,
-      "reality": false,
-      "link": "vless://54d67aa6-fe54-4b8e-b3b6-62b7e043eb35@195.137.226.11:443?mode=auto&path=%2F&security=tls&encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&insecure=1&host=mobile.zandix.ir&fp=chrome&type=xhttp&allowInsecure=1&sni=mobile.zandix.ir#%F0%9F%87%AE%F0%9F%87%B7%20%E2%AD%90%EF%B8%8F%20%40Premium_Config_1%20%F0%9F%9A%80%20%7C%20%F0%9F%91%88%20Join"
-    },
-    {
-      "name": "🇱🇺LU卢森堡1",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 18,
-      "quality": "Excellent",
-      "tls": true,
-      "reality": false,
-      "link": "vless://f775978b-6e22-41a8-ae5e-5f9779e6745f@188.42.145.90:8443?encryption=none&security=tls&sni=juzibaipiao.5112233.xyz&type=ws&host=juzibaipiao.5112233.xyz&path=%2f%3fed%3d2048#%f0%9f%87%b1%f0%9f%87%ba+LU+%e5%8d%a2%e6%a3%ae%e5%a0%a1+1"
-    },
-    {
       "name": "🇳🇱 荷兰 | NLD 4",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 124,
+      "ping": 94,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +52,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 122,
+      "ping": 98,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +63,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 136,
+      "ping": 102,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +74,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 136,
+      "ping": 99,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +85,37 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 136,
+      "ping": 99,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://f55e9aba-7b14-4f6f-b59a-d5b3d45c9309@178.17.57.33:8444?sni=github.com&type=grpc&serviceName=GunService&fp=random&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%2315"
+    },
+    {
+      "name": "🇰🇷KR-3.34.131.153-0211",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "3.34.131.153",
+      "port": 443,
+      "ping": 183,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@3.34.131.153:443?security=tls&sni=pretty-rat.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.34.131.153-0211"
+    },
+    {
+      "name": "🇰🇷KR-3.35.168.225-0183",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "noted-cougar.rooster465.autos",
+      "port": 443,
+      "ping": 188,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@noted-cougar.rooster465.autos:443?security=tls&sni=noted-cougar.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.35.168.225-0183"
     },
     {
       "name": "🇩🇪 德国 | DEU 5",
@@ -663,5 +667,12 @@
       "reality": false,
       "link": "trojan://0400697c-b581-4575-9d2f-0bbd4659312d@jp005.421421.xyz:20230?security=tls&sni=www.alibaba.com&type=ws&path=/&Host=www.alibaba.com#%F0%9F%87%AF%F0%9F%87%B5JP-13.230.169.40-0496"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-15T14:16:50.516300+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 8,
+    "dead": 2,
+    "replaced": 2
+  }
 }
