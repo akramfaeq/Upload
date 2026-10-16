@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-16T10:33:34.253174+00:00",
+  "updated_at": "2026-10-16T11:36:42.612867+00:00",
   "count": 59,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 111,
+      "ping": 140,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,7 +19,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 115,
+      "ping": 143,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -30,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 218,
+      "ping": 243,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -41,29 +41,18 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 108,
+      "ping": 131,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0433"
     },
     {
-      "name": "🇩🇪DE-92.42.99.143-0468",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "trojan",
-      "ping": 119,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://humanity@92.42.99.143:443?security=tls#%F0%9F%87%A9%F0%9F%87%AADE-92.42.99.143-0468"
-    },
-    {
       "name": "www.v2nodes.com vless- 6",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 117,
+      "ping": 144,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +63,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 121,
+      "ping": 135,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,33 +74,48 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 129,
+      "ping": 139,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://6338c01a-310e-42c3-bf4f-2a20e161054b@31.59.140.189:443?sni=nl1.aiage.work&flow=xtls-rprx-vision&fp=random&security=tls#%F0%9F%87%B3%F0%9F%87%B1%20%E8%8D%B7%E5%85%B0%20%7C%20NLD%20%233"
     },
     {
-      "name": "🇩🇪www.v2nodes.com vless-DE-1... 7",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "vless",
-      "ping": 129,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vless://ce29a04d-c95a-4451-9518-bae0c074e0d7@31.59.216.162:2083?sni=crt.onecloudstream.com&alpn=http/1.1&type=ws&path=/vless-wsfp=random&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%237"
-    },
-    {
       "name": "🇬🇧www.v2nodes.com vless-GB-1... 1",
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 129,
+      "ping": 150,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://b0a100ee-c397-43f2-bdae-2adfb7a0d4e5@16.171.118.250:443?sni=rnxq-1lpi3m.linmeisoft.com&type=ws&host=rnxq-1lpi3m.linmeisoft.com&path=/b0a100ee-c397-43f2-bdae-2adfb7a0d4e5fp=chrome&security=tls#%F0%9F%87%AC%F0%9F%87%A7%5Bwww.v2nodes.com%5D%20vless-GB-1...%20%231"
+    },
+    {
+      "name": "🇯🇵JP-108.61.186.37-5077",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "jp.tronsg.com",
+      "port": 443,
+      "ping": 165,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://Trojan@82164024@jp.tronsg.com:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-108.61.186.37-5077"
+    },
+    {
+      "name": "🇰🇷KR-3.36.50.213-0153",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "pure-kodiak.rooster465.autos",
+      "port": 443,
+      "ping": 166,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@pure-kodiak.rooster465.autos:443?security=tls&sni=pure-kodiak.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.36.50.213-0153"
     },
     {
       "name": "🇫🇮www.v2nodes.com vless-FI-1... 7",
@@ -652,5 +656,12 @@
       "reality": false,
       "link": "trojan://UX82473651@3.1.252.137:443?security=tls&sni=brave-tomcat.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-3.1.252.137-0141"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-16T11:36:42.612883+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 8,
+    "dead": 2,
+    "replaced": 2
+  }
 }
