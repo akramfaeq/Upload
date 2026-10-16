@@ -1,25 +1,14 @@
 {
   "version": 5,
-  "updated_at": "2026-10-16T11:36:42.612867+00:00",
+  "updated_at": "2026-10-16T15:30:16.562901+00:00",
   "count": 59,
   "servers": [
-    {
-      "name": "NL🇳🇱@ELiV2ray",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 140,
-      "quality": "Good",
-      "tls": true,
-      "reality": true,
-      "link": "vless://f55e9aba-7b14-4f6f-b59a-d5b3d45c9309@185.200.199.199:8444?mode=gun&security=reality&encryption=none&pbk=FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0&fp=chrome&type=grpc&serviceName=GunService&sni=github.com&sid=457fab2ac885dbe0#NL%F0%9F%87%B3%F0%9F%87%B1%40ELiV2ray"
-    },
     {
       "name": "🇩🇪 德国 | DEU",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 143,
+      "ping": 134,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -30,7 +19,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 243,
+      "ping": 235,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -41,7 +30,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 131,
+      "ping": 114,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -52,7 +41,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 144,
+      "ping": 137,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -63,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 135,
+      "ping": 140,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +63,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 139,
+      "ping": 142,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 150,
+      "ping": 148,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -98,7 +87,7 @@
       "protocol": "trojan",
       "host": "jp.tronsg.com",
       "port": 443,
-      "ping": 165,
+      "ping": 160,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -111,11 +100,24 @@
       "protocol": "trojan",
       "host": "pure-kodiak.rooster465.autos",
       "port": 443,
-      "ping": 166,
+      "ping": 345,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://UX82473651@pure-kodiak.rooster465.autos:443?security=tls&sni=pure-kodiak.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.36.50.213-0153"
+    },
+    {
+      "name": "🇺🇸US-23.106.44.14-0394",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "23.106.44.14",
+      "port": 443,
+      "ping": 27,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://600421cf-11d7-429f-a65b-c30397f1bc03@23.106.44.14:443?security=tls&sni=sj6.freeguard.org#%F0%9F%87%BA%F0%9F%87%B8US-23.106.44.14-0394"
     },
     {
       "name": "🇫🇮www.v2nodes.com vless-FI-1... 7",
@@ -657,11 +659,11 @@
       "link": "trojan://UX82473651@3.1.252.137:443?security=tls&sni=brave-tomcat.rooster465.autos#%F0%9F%87%B8%F0%9F%87%ACSG-3.1.252.137-0141"
     }
   ],
-  "monitor_last_run": "2026-10-16T11:36:42.612883+00:00",
+  "monitor_last_run": "2026-10-16T15:30:16.562917+00:00",
   "monitor_stats": {
     "checked": 10,
-    "alive": 8,
-    "dead": 2,
-    "replaced": 2
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
   }
 }
