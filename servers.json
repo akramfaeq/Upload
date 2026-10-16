@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-16T02:48:55.814104+00:00",
+  "updated_at": "2026-10-16T06:21:29.252002+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 115,
+      "ping": 152,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,29 +19,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 127,
+      "ping": 153,
       "quality": "Good",
       "tls": true,
       "reality": true,
       "link": "vless://f6dadd84-7d7b-4e67-9577-7ede6300368a@157.173.27.138:5443?&security=reality&flow=xtls-rprx-vision&pbk=7pr2qWG1_3TjBDCidQWJ2lnbEf72lOcse4Gca8anwEo&sid=57f0eca7ae6be8&fp=edge&sni=travel.yandex.ru&type=tcp&headerType=none&host=travel.yandex.ru&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU"
     },
     {
-      "name": "美国V2CROSS.COM",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 130,
-      "quality": "Fair",
-      "tls": true,
-      "reality": true,
-      "link": "vless://318c935d-c195-41d3-99ad-9bbcfdab3386@nl.srv.vbuste-bot.com:444?mode=gun&security=reality&encryption=none&pbk=0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08&fp=chrome&type=grpc&sni=nl.srv.vbuste-bot.com&sid=4be4110078ebed4a#%E7%BE%8E%E5%9B%BD+V2CROSS.COM"
-    },
-    {
       "name": "🇩🇪 德国 | DEU",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 120,
+      "ping": 153,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -52,7 +41,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 144,
+      "ping": 180,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -63,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 216,
+      "ping": 258,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -74,7 +63,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 144,
+      "ping": 170,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -85,7 +74,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 114,
+      "ping": 147,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 107,
+      "ping": 145,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 115,
+      "ping": 146,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://d9eb02da-a469-44a7-a393-ba1c5fbbc8c4@177.1.187.139:1984?sni=ruori.ai&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%235"
+    },
+    {
+      "name": "🇰🇷KR-3.34.131.153-0151",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "3.34.131.153",
+      "port": 443,
+      "ping": 137,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@3.34.131.153:443?security=tls&sni=pretty-rat.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.34.131.153-0151"
     },
     {
       "name": "🇩🇪DE-185.220.100.168-0486",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vless://35cbae61-ee10-4cb9-abb8-4950b35e9851@156.226.168.221:35193?sni=www.apple.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AD%F0%9F%87%B0%5Bwww.v2nodes.com%5D%20vless-HK-1..."
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-16T06:21:29.252018+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
