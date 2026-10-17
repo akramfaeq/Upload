@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-17T14:51:38.731810+00:00",
+  "updated_at": "2026-10-17T17:14:25.275935+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 131,
+      "ping": 92,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,40 +19,18 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 141,
+      "ping": 107,
       "quality": "Fair",
       "tls": true,
       "reality": true,
       "link": "vless://6c713691-3ca2-0009-ad25-113d1bed6b03@nl1.fluxorvpn.net:443?security=reality&encryption=none&pbk=JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E&headerType=none&fp=qq&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=hatch.senko.ru&sid=b8c6965f3596688a#Channel%20%3A%20%40Daily_Configs%20"
     },
     {
-      "name": "🇱🇺LU卢森堡1",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 18,
-      "quality": "Excellent",
-      "tls": true,
-      "reality": false,
-      "link": "vless://f775978b-6e22-41a8-ae5e-5f9779e6745f@188.42.145.90:8443?encryption=none&security=tls&sni=juzibaipiao.5112233.xyz&type=ws&host=juzibaipiao.5112233.xyz&path=%2f%3fed%3d2048#%f0%9f%87%b1%f0%9f%87%ba+LU+%e5%8d%a2%e6%a3%ae%e5%a0%a1+1"
-    },
-    {
-      "name": "🇦🇹AT-212.183.88.136-0441",
-      "flag": "🇦🇹",
-      "country": "Austria",
-      "protocol": "trojan",
-      "ping": 18,
-      "quality": "Excellent",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://humanity@212.183.88.136:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#%F0%9F%87%A6%F0%9F%87%B9AT-212.183.88.136-0441"
-    },
-    {
       "name": "🇳🇱NL-45.87.41.18-0434",
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 119,
+      "ping": 81,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -63,7 +41,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 122,
+      "ping": 84,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 132,
+      "ping": 94,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +63,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 137,
+      "ping": 95,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +74,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 143,
+      "ping": 115,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +85,37 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 148,
+      "ping": 112,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://67eb6b17-7797-4ded-bf52-423c4c5f6cbd@87.239.249.137:443?sni=www.foxsports.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%AE%5Bwww.v2nodes.com%5D%20vless-FI-1...%20%2311"
+    },
+    {
+      "name": "🇯🇵JP-108.61.186.37-5450",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "jp.tronsg.com",
+      "port": 443,
+      "ping": 190,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://Trojan@82164024@jp.tronsg.com:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5JP-108.61.186.37-5450"
+    },
+    {
+      "name": "🇰🇷KR-3.34.131.153-0171",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "3.34.131.153",
+      "port": 443,
+      "ping": 184,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://UX82473651@3.34.131.153:443?security=tls&sni=pretty-rat.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7KR-3.34.131.153-0171"
     },
     {
       "name": "🇳🇱www.v2nodes.com vless-NL-1...",
@@ -663,5 +667,12 @@
       "reality": false,
       "link": "vless://bf16ee0c-8b3c-41e4-ab3a-8b48033c404e@51.77.217.70:2053?sni=www.apple.com&fp=chrome&security=tls#%F0%9F%87%AB%F0%9F%87%B7%5Bwww.v2nodes.com%5D%20vless-FR-1...%20%235"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-17T17:14:25.275963+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 8,
+    "dead": 2,
+    "replaced": 2
+  }
 }
