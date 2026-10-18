@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-17T20:00:24.969016+00:00",
+  "updated_at": "2026-10-18T01:11:32.988307+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 153,
+      "ping": 145,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,7 +19,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 182,
+      "ping": 175,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -30,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 247,
+      "ping": 236,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -41,7 +41,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 186,
+      "ping": 160,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -52,29 +52,18 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 138,
+      "ping": 142,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%B3%F0%9F%87%B1NL-45.87.41.18-0447"
     },
     {
-      "name": "🇵🇱www.v2nodes.com vless-PL-1... 18",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 147,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "vless://b18d5990-96eb-4587-a386-7f8ef7591e6a@31.77.13.19:2063?allowInsecure=1&sni=rusbid.de&flow=xtls-rprx-vision&fp=firefox&security=tls#%F0%9F%87%B5%F0%9F%87%B1%5Bwww.v2nodes.com%5D%20vless-PL-1...%20%2318"
-    },
-    {
       "name": "🇩🇪DE-185.220.100.168-0445",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 153,
+      "ping": 150,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 145,
+      "ping": 149,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇸🇪",
       "country": "Sweden",
       "protocol": "vless",
-      "ping": 164,
+      "ping": 168,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 174,
+      "ping": 151,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://f55e9aba-7b14-4f6f-b59a-d5b3d45c9309@193.233.74.6:8444?sni=github.com&type=grpc&serviceName=GunService&fp=firefox&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%2313"
+    },
+    {
+      "name": "🇨🇦CA-155.138.138.2-5503",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "ca.tronsg.com",
+      "port": 443,
+      "ping": 87,
+      "quality": "Good",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://Trojan@82164024@ca.tronsg.com:443?security=tls&sni=ca.tronsg.com#%F0%9F%87%A8%F0%9F%87%A6CA-155.138.138.2-5503"
     },
     {
       "name": "🇩🇪DE-185.255.179.166-0444",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "trojan://humanity@185.114.72.31:2053?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%AA%F0%9F%87%B8ES-185.114.72.31-0449"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-18T01:11:32.988322+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
