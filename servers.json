@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-21T21:09:38.565535+00:00",
+  "updated_at": "2026-10-21T22:48:29.915506+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,29 +8,18 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 148,
+      "ping": 109,
       "quality": "Good",
       "tls": true,
       "reality": true,
       "link": "vless://f55e9aba-7b14-4f6f-b59a-d5b3d45c9309@185.192.22.159:8444?mode=gun&security=reality&encryption=none&pbk=FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0&type=grpc&serviceName=GunService&sni=github.com&sid=457fab2ac885dbe0#Channel%20%3A%20%40proxy_kafee%20"
     },
     {
-      "name": "俄罗斯V2CROSS.COM",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 165,
-      "quality": "Fair",
-      "tls": true,
-      "reality": true,
-      "link": "vless://22136b20-6365-4ae6-b21a-799a00ab1346@ss2.soreanapanel.com:8080?security=reality&encryption=none&pbk=t_z1GMEv2FYr0Bo57WBuKRRlkyOMj40025j-OcWCtkU&host=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&fp=chrome&spx=/929574c99a2f206&type=tcp&sni=graphs.4cdn.de&sid=8d542c72c84f#%E4%BF%84%E7%BD%97%E6%96%AF+V2CROSS.COM"
-    },
-    {
       "name": "🇩🇪 德国 | DEU",
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 170,
+      "ping": 145,
       "quality": "Fair",
       "tls": true,
       "reality": true,
@@ -41,7 +30,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 150,
+      "ping": 148,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -52,7 +41,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 139,
+      "ping": 103,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -63,7 +52,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 148,
+      "ping": 120,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +63,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 152,
+      "ping": 122,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 149,
+      "ping": 123,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 175,
+      "ping": 140,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 138,
+      "ping": 113,
       "quality": "Fair",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@209.38.109.222:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1NL-209.38.109.222-0450"
+    },
+    {
+      "name": "🇺🇸US-216.106.186.32-0069",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "blog.findlocaljobnetworkandbuildcommunityconnections.com",
+      "port": 443,
+      "ping": 71,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://dba20dcb635e430fa4d3bfc303a149d2@blog.findlocaljobnetworkandbuildcommunityconnections.com:443?security=tls&sni=blog.findlocaljobnetworkandbuildcommunityconnections.com#%F0%9F%87%BA%F0%9F%87%B8US-216.106.186.32-0069"
     },
     {
       "name": "🇩🇪DE-161.35.192.122-0442",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vmess://ewogICAgImFkZCI6ICJrbmVOYUtIZVNYblpIMjU5LnYuM2Rucy52aXAiLAogICAgImFpZCI6IDAsCiAgICAiaG9zdCI6ICJrbmVOYUtIZVNYblpIMjU5LnYuM2Rucy52aXAiLAogICAgImlkIjogIjg4ODg4ODg4LTg4ODgtODg4OC04ODg4LTg4ODg4ODg4ODg4OCIsCiAgICAibmV0IjogIndzIiwKICAgICJwYXRoIjogIi93cy12bWVzcyIsCiAgICAicG9ydCI6IDQ0MywKICAgICJwcyI6ICLwn4ev8J+HtUpQLTQzLjE2NS4xNzQuNzYtMDQ2OSIsCiAgICAidGxzIjogInRscyIsCiAgICAidHlwZSI6ICJhdXRvIiwKICAgICJzZWN1cml0eSI6ICJhdXRvIiwKICAgICJza2lwLWNlcnQtdmVyaWZ5IjogZmFsc2UsCiAgICAic25pIjogImtuZU5hS0hlU1huWkgyNTkudi4zZG5zLnZpcCIKfQ=="
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-21T22:48:29.915522+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
