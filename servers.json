@@ -1,25 +1,14 @@
 {
   "version": 5,
-  "updated_at": "2026-10-22T21:08:55.566142+00:00",
+  "updated_at": "2026-10-22T22:32:31.786574+00:00",
   "count": 60,
   "servers": [
-    {
-      "name": "Channel  @proxy_kafee",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "vless",
-      "ping": 85,
-      "quality": "Good",
-      "tls": true,
-      "reality": true,
-      "link": "vless://f55e9aba-7b14-4f6f-b59a-d5b3d45c9309@185.192.22.159:8444?mode=gun&security=reality&encryption=none&pbk=FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0&type=grpc&serviceName=GunService&sni=github.com&sid=457fab2ac885dbe0#Channel%20%3A%20%40proxy_kafee%20"
-    },
     {
       "name": "爱尔兰V2CROSS.COM",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 179,
+      "ping": 235,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -30,7 +19,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 82,
+      "ping": 117,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -41,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 92,
+      "ping": 135,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -52,7 +41,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 95,
+      "ping": 150,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -63,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 95,
+      "ping": 141,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,7 +63,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 100,
+      "ping": 151,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -85,7 +74,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 102,
+      "ping": 138,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 111,
+      "ping": 152,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 112,
+      "ping": 152,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://67eb6b17-7797-4ded-bf52-423c4c5f6cbd@87.239.249.137:443?sni=www.foxsports.com&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%8F%B3%5Bwww.v2nodes.com%5D%20vless-%20%2311"
+    },
+    {
+      "name": "RELAY-45.130.125.160-0495",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "45.130.125.160",
+      "port": 443,
+      "ping": 18,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://humanity@45.130.125.160:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#%F0%9F%8F%81RELAY-45.130.125.160-0495"
     },
     {
       "name": "🇩🇪DE-185.255.179.166-0489",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:46105?sni=www.lamer.com.sg&flow=xtls-rprx-vision&fp=safari&security=tls#%F0%9F%8F%B3%5Bwww.v2nodes.com%5D%20vless-%20%2334"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-22T22:32:31.786590+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
