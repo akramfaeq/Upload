@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-22T22:32:31.786574+00:00",
+  "updated_at": "2026-10-23T00:52:08.296978+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 235,
+      "ping": 233,
       "quality": "Slow",
       "tls": true,
       "reality": true,
@@ -30,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 135,
+      "ping": 125,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -41,7 +41,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 150,
+      "ping": 152,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -52,7 +52,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 141,
+      "ping": 135,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -63,29 +63,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 151,
+      "ping": 147,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "vless://558b26f6-061b-4079-9b84-ca13b3e90ae3@144.31.215.162:443?sni=c1.qwyak.ru&flow=xtls-rprx-vision&fp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AA%5Bwww.v2nodes.com%5D%20vless-DE-1...%20%239"
     },
     {
-      "name": "🇵🇱_PL_波兰",
-      "flag": "🇳🇱",
-      "country": "Netherlands",
-      "protocol": "trojan",
-      "ping": 138,
-      "quality": "Good",
-      "tls": true,
-      "reality": false,
-      "link": "trojan://u93yPGuY2zgIsisJZKS2QzJzg@78.17.171.137:443?security=tls&sni=2.HI-L.IM#%F0%9F%87%B5%F0%9F%87%B1_PL_%E6%B3%A2%E5%85%B0"
-    },
-    {
       "name": "www.v2nodes.com vless- 12",
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 152,
+      "ping": 148,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -96,7 +85,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 152,
+      "ping": 145,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -114,6 +103,19 @@
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@45.130.125.160:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#%F0%9F%8F%81RELAY-45.130.125.160-0495"
+    },
+    {
+      "name": "🇦🇹AT-212.183.88.136-0499",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "212.183.88.136",
+      "port": 443,
+      "ping": 18,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://humanity@212.183.88.136:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#%F0%9F%87%A6%F0%9F%87%B9AT-212.183.88.136-0499"
     },
     {
       "name": "🇩🇪DE-185.255.179.166-0489",
@@ -666,7 +668,7 @@
       "link": "vless://57beeeb0-03fc-4fc9-94da-7604488a7134@funagfrdfs.alixxplay.com:46105?sni=www.lamer.com.sg&flow=xtls-rprx-vision&fp=safari&security=tls#%F0%9F%8F%B3%5Bwww.v2nodes.com%5D%20vless-%20%2334"
     }
   ],
-  "monitor_last_run": "2026-10-22T22:32:31.786590+00:00",
+  "monitor_last_run": "2026-10-23T00:52:08.296994+00:00",
   "monitor_stats": {
     "checked": 10,
     "alive": 9,
