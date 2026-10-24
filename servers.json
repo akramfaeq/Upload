@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated_at": "2026-10-23T20:55:40.982785+00:00",
+  "updated_at": "2026-10-24T00:31:54.002831+00:00",
   "count": 60,
   "servers": [
     {
@@ -8,7 +8,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "vless",
-      "ping": 95,
+      "ping": 121,
       "quality": "Good",
       "tls": true,
       "reality": true,
@@ -19,7 +19,7 @@
       "flag": "🇳🇱",
       "country": "Netherlands",
       "protocol": "trojan",
-      "ping": 86,
+      "ping": 116,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -30,7 +30,7 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 91,
+      "ping": 140,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -41,7 +41,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 115,
+      "ping": 148,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -52,7 +52,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 121,
+      "ping": 149,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -63,7 +63,7 @@
       "flag": "🇫🇮",
       "country": "Finland",
       "protocol": "vless",
-      "ping": 117,
+      "ping": 148,
       "quality": "Good",
       "tls": true,
       "reality": false,
@@ -74,29 +74,18 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 121,
+      "ping": 152,
       "quality": "Good",
       "tls": true,
       "reality": false,
       "link": "trojan://humanity@185.255.179.166:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE-185.255.179.166-0441"
     },
     {
-      "name": "🇩🇪DE_4|1.4MBs",
-      "flag": "🇩🇪",
-      "country": "Germany",
-      "protocol": "vless",
-      "ping": 88,
-      "quality": "Fair",
-      "tls": true,
-      "reality": false,
-      "link": "vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@177.1.187.183:443?sni=snip.edgeoneai.cc.cd&type=ws&host=snip.edgeoneai.cc.cd&path=/fp=chromefp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AADE_4%7C1.4MB/s"
-    },
-    {
       "name": "🇩🇪DE-188.241.241.200-0101",
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "trojan",
-      "ping": 113,
+      "ping": 161,
       "quality": "Fair",
       "tls": true,
       "reality": false,
@@ -107,11 +96,24 @@
       "flag": "🇩🇪",
       "country": "Germany",
       "protocol": "vless",
-      "ping": 87,
+      "ping": 134,
       "quality": "Fair",
       "tls": true,
       "reality": false,
       "link": "vless://495c7195-85b8-498a-bf20-2ea9ce9175b5@64.188.68.254:8443?sni=snip.edgeoneai.cc.cd&type=ws&host=snip.edgeoneai.cc.cd&path=/fp=chrome&security=tls#%F0%9F%87%A9%F0%9F%87%AA%20%E5%BE%B7%E5%9B%BD%20%7C%20DEU%20%233"
+    },
+    {
+      "name": "🇦🇹AT-212.183.88.136-0451",
+      "flag": "🌐",
+      "country": "Unknown",
+      "protocol": "trojan",
+      "host": "212.183.88.136",
+      "port": 443,
+      "ping": 19,
+      "quality": "Excellent",
+      "tls": true,
+      "reality": false,
+      "link": "trojan://humanity@212.183.88.136:443?security=tls&sni=www.calmlunch.com&type=ws&path=%2Fassignment&Host=www.calmlunch.com#%F0%9F%87%A6%F0%9F%87%B9AT-212.183.88.136-0451"
     },
     {
       "name": "🇩🇪DE-188.241.241.236-0175",
@@ -663,5 +665,12 @@
       "reality": false,
       "link": "trojan://e26a229d-e8f2-4ff9-8c7d-58a9d83ee437@139.180.146.200:8886?security=tls&sni=139.180.146.200#%F0%9F%87%B8%F0%9F%87%ACSG-139.180.146.200-0470"
     }
-  ]
+  ],
+  "monitor_last_run": "2026-10-24T00:31:54.002846+00:00",
+  "monitor_stats": {
+    "checked": 10,
+    "alive": 9,
+    "dead": 1,
+    "replaced": 1
+  }
 }
